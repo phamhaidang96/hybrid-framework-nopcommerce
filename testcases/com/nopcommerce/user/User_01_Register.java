@@ -13,6 +13,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import commons.BasePage;
+
 public class User_01_Register {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
@@ -25,8 +27,8 @@ public class User_01_Register {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-
 		driver.get("https://demo.nopcommerce.com/");
+
 		randEmail = "automation" + randomNumber() + "@gmail.net";
 		explicitWait = new WebDriverWait(driver, 5);
 	}
