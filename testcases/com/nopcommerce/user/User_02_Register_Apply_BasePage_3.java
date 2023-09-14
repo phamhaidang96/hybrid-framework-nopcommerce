@@ -43,6 +43,7 @@ public class User_02_Register_Apply_BasePage_3 extends BasePage {
 		clickToElement(driver, "//button[@id='register-button']");
 
 		Assert.assertEquals(getElementText(driver, "//span[@id='FirstName-error']"), "First name is required.");
+		Assert.assertEquals(getElementText(driver, "//span[@id='LastName-error']"), "Last name is required.");
 		Assert.assertEquals(getElementText(driver, "//span[@id='Email-error']"), "Email is required.");
 		Assert.assertEquals(getElementText(driver, "//span[@id='Password-error']"), "Password is required.");
 		Assert.assertEquals(getElementText(driver, "//span[@id='ConfirmPassword-error']"), "Password is required.");
@@ -81,8 +82,6 @@ public class User_02_Register_Apply_BasePage_3 extends BasePage {
 
 		waitForElementVisible(driver, "//div[@class='result']");
 		Assert.assertEquals(getElementText(driver, "//div[@class='result']"), "Your registration completed");
-
-		waitForElementClickable(driver, projectPath);
 	}
 
 	@Test
