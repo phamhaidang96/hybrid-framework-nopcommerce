@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce">
-  <test name="Run on Firefox">
+  
+<!--  <test name="Run on Firefox">-->
+<!--	  <parameter name = "browser" value = "firefox"/>-->
+<!--    <classes>-->
+<!--      <class name="com.nopcommerce.user.User_05_Multiple_Browser"/>-->
+<!--    </classes>-->
+<!--  </test>-->
+  
+  <test name="Run on Headless Chrome">
+	  <parameter name = "browser" value = "chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.User_04_Login"/>
+      <class name="com.nopcommerce.user.User_05_Multiple_Browser"/>
     </classes>
-  </test> <!-- Test -->
+  </test>
+  
 </suite> <!-- Suite -->
