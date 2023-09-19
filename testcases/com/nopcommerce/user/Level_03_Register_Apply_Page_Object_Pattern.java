@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import pageObjects.HomePageObject;
 import pageObjects.RegisterPageObject;
 
-public class User_03_Register_Apply_Page_Object_Pattern {
+public class Level_03_Register_Apply_Page_Object_Pattern {
 	private WebDriver driver;
 	private String projectPath = System.getProperty("user.dir");
 	private String randEmail, firstName, lastName, password;
@@ -38,7 +38,7 @@ public class User_03_Register_Apply_Page_Object_Pattern {
 
 	@Test
 	public void Register_01_Register_Empty_Data() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.clickToRegisterButton();
 
@@ -51,7 +51,7 @@ public class User_03_Register_Apply_Page_Object_Pattern {
 
 	@Test
 	public void Register_02_Register_Invalid_Email() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -66,7 +66,7 @@ public class User_03_Register_Apply_Page_Object_Pattern {
 
 	@Test
 	public void Register_03_Register_Success() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -81,7 +81,7 @@ public class User_03_Register_Apply_Page_Object_Pattern {
 
 	@Test
 	public void Register_04_Register_Existing_Email() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -96,7 +96,7 @@ public class User_03_Register_Apply_Page_Object_Pattern {
 
 	@Test
 	public void Register_05_Register_Password_Less_Than_6_Characters() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -110,7 +110,7 @@ public class User_03_Register_Apply_Page_Object_Pattern {
 
 	@Test
 	public void Register_06_Register_Invalid_Confirm_Password() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);

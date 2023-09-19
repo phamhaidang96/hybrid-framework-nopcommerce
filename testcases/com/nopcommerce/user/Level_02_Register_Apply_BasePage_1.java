@@ -15,7 +15,7 @@
 //
 // import commons.BasePage;
 //
-// public class User_02_Register_Apply_BasePage_1 {
+// public class Level_02_Register_Apply_BasePage_1 {
 // WebDriver driver;
 // String projectPath = System.getProperty("user.dir");
 // String randEmail;

@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import commons.BasePage;
 
-public class User_02_Register_Apply_BasePage_3 extends BasePage {
+public class Level_02_Register_Apply_BasePage_3 extends BasePage {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String randEmail;

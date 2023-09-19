@@ -1,34 +1,29 @@
 package com.nopcommerce.user;
 
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import commons.BaseTest;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
+import pageObjects.PageGeneratorManager;
 import pageObjects.RegisterPageObject;
 
-public class User_04_Login {
+public class Level_06_Apply_PageGeneratorManager extends BaseTest {
 	private WebDriver driver;
-	private String projectPath, firstName, lastName, randEmail, password, notRegisterEmail;
+	private String firstName, lastName, randEmail, password, notRegisterEmail;
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 	private LoginPageObject loginPage;
 
+	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass() {
-		projectPath = System.getProperty("user.dir");
-		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.get("https://demo.nopcommerce.com/");
+	public void beforeClass(String browserName) {
+		driver = getBrowserDriver(browserName);
 
 		randEmail = "automation" + randomNumber() + "@gmail.net";
 		notRegisterEmail = "AutomationTest001@gmail.org";
@@ -36,12 +31,12 @@ public class User_04_Login {
 		lastName = "Test";
 		password = "autoTest1";
 
-		homePage = new HomePageObject(driver);
+		homePage = PageGeneratorManager.getHomePage(driver);
+
 		System.out.println("Pre-condition: Step 01: Click to register link");
-		homePage.clickToRegisterLink();
+		registerPage = homePage.openRegisterPage();
 
 		System.out.println("Pre-condition: Step 02: Input valid data");
-		registerPage = new RegisterPageObject(driver);
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(randEmail);
@@ -54,12 +49,10 @@ public class User_04_Login {
 
 	@Test
 	public void Login_01_Empty_Data() {
-		homePage = new HomePageObject(driver);
 		System.out.println("Login_01 - Step 01: Click to login link");
-		homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 
 		System.out.println("Login_01 - Step 02: Click to login button");
-		loginPage = new LoginPageObject(driver);
 		loginPage.clickToLoginButton();
 
 		System.out.println("Login_01 - Step 03: Verify error message");
@@ -68,12 +61,10 @@ public class User_04_Login {
 
 	@Test
 	public void Login_02_Invalid_Email() {
-		homePage = new HomePageObject(driver);
 		System.out.println("Login_02 - Step 01: Click to login link");
-		homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 
 		System.out.println("Login_02 - Step 02: Input invalid email");
-		loginPage = new LoginPageObject(driver);
 		loginPage.inputToEmailTextBox("Test");
 		loginPage.clickToLoginButton();
 
@@ -83,12 +74,10 @@ public class User_04_Login {
 
 	@Test
 	public void Login_03_Not_Register_Email() {
-		homePage = new HomePageObject(driver);
 		System.out.println("Login_03 - Step 01: Click to login link");
-		homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 
 		System.out.println("Login_03 - Step 02: Input not existing email");
-		loginPage = new LoginPageObject(driver);
 		loginPage.inputToEmailTextBox(notRegisterEmail);
 		loginPage.clickToLoginButton();
 
@@ -98,12 +87,10 @@ public class User_04_Login {
 
 	@Test
 	public void Login_04_Existing_Email_And_Empty_Password() {
-		homePage = new HomePageObject(driver);
 		System.out.println("Login_04 - Step 01: Click to login link");
-		homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 
 		System.out.println("Login_04 - Step 02: Input existing email and empty password");
-		loginPage = new LoginPageObject(driver);
 		loginPage.inputToEmailTextBox(randEmail);
 		loginPage.clickToLoginButton();
 
@@ -113,12 +100,10 @@ public class User_04_Login {
 
 	@Test
 	public void Login_05_Existing_Email_And_Incorrect_Password() {
-		homePage = new HomePageObject(driver);
 		System.out.println("Login_05 - Step 01: Click to login link");
-		homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 
 		System.out.println("Login_05 - Step 02: Input existing email and incorrect password");
-		loginPage = new LoginPageObject(driver);
 		loginPage.inputToEmailTextBox(randEmail);
 		loginPage.inputToPasswordTextbox(firstName);
 		loginPage.clickToLoginButton();
@@ -129,23 +114,16 @@ public class User_04_Login {
 
 	@Test
 	public void Login_06_Valid_Eamil_And_Valid_Password() {
-		homePage = new HomePageObject(driver);
 		System.out.println("Login_06 - Step 01: Click to login link");
-		homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 
 		System.out.println("Login_06 - Step 02: Input valid email and valid password");
-		loginPage = new LoginPageObject(driver);
 		loginPage.inputToEmailTextBox(randEmail);
 		loginPage.inputToPasswordTextbox(password);
 		loginPage.clickToLoginButton();
 
 		System.out.println("Login_06 - Step 03: Verify login successfully");
 		Assert.assertTrue(homePage.getMyAccountLink());
-	}
-
-	private int randomNumber() {
-		Random rand = new Random();
-		return rand.nextInt(99999);
 	}
 
 	@AfterClass

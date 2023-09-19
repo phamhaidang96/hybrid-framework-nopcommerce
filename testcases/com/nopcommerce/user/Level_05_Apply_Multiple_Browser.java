@@ -11,7 +11,7 @@ import commons.BaseTest;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 
-public class User_05_Multiple_Browser extends BaseTest {
+public class Level_05_Apply_Multiple_Browser extends BaseTest {
 	private WebDriver driver;
 	private HomePageObject homePage;
 	private LoginPageObject loginPage;
@@ -26,7 +26,7 @@ public class User_05_Multiple_Browser extends BaseTest {
 	public void Login_01_Empty_Data() {
 		homePage = new HomePageObject(driver);
 		System.out.println("Login_01 - Step 01: Click to login link");
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 
 		System.out.println("Login_01 - Step 02: Click to login button");
 		loginPage = new LoginPageObject(driver);
@@ -38,10 +38,9 @@ public class User_05_Multiple_Browser extends BaseTest {
 
 	@Test
 	public void Login_02_Invalid_Email() {
-		homePage = new HomePageObject(driver);
+		// homePage = new HomePageObject(driver);
 		System.out.println("Login_02 - Step 01: Click to login link");
-		homePage.clickToLoginLink();
-		// sleepInSecond(2);
+		homePage.openLoginPage();
 
 		System.out.println("Login_02 - Step 02: Input invalid email");
 		loginPage = new LoginPageObject(driver);
