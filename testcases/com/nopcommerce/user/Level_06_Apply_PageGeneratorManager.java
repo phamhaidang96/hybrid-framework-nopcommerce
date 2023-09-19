@@ -8,17 +8,17 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
+import commons.PageGeneratorManager;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserLoginPageObject;
+import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
 public class Level_06_Apply_PageGeneratorManager extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, randEmail, password, notRegisterEmail;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -31,7 +31,7 @@ public class Level_06_Apply_PageGeneratorManager extends BaseTest {
 		lastName = "Test";
 		password = "autoTest1";
 
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		System.out.println("Pre-condition: Step 01: Click to register link");
 		registerPage = homePage.openRegisterPage();

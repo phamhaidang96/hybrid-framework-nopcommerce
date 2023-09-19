@@ -9,9 +9,9 @@
 <!--  </test>-->
   
   <test name="Run on Headless Chrome">
-	  <parameter name = "browser" value = "coccoc"/>
+	  <parameter name = "browser" value = "firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_07_MyAccount_Apply_Switch_Page"/>
+      <class name="com.nopcommerce.user.Level_08_Switch_Role"/>
     </classes>
   </test>
   

@@ -10,16 +10,16 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserLoginPageObject;
+import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
 public class Level_04_Login {
 	private WebDriver driver;
 	private String projectPath, firstName, lastName, randEmail, password, notRegisterEmail;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -36,12 +36,12 @@ public class Level_04_Login {
 		lastName = "Test";
 		password = "autoTest1";
 
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		System.out.println("Pre-condition: Step 01: Click to register link");
 		homePage.openRegisterPage();
 
 		System.out.println("Pre-condition: Step 02: Input valid data");
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -59,7 +59,7 @@ public class Level_04_Login {
 		homePage.openLoginPage();
 
 		System.out.println("Login_01 - Step 02: Click to login button");
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.clickToLoginButton();
 
 		System.out.println("Login_01 - Step 03: Verify error message");
@@ -72,7 +72,7 @@ public class Level_04_Login {
 		homePage.openLoginPage();
 
 		System.out.println("Login_02 - Step 02: Input invalid email");
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputToEmailTextBox("Test");
 		loginPage.clickToLoginButton();
 
@@ -86,7 +86,7 @@ public class Level_04_Login {
 		homePage.openLoginPage();
 
 		System.out.println("Login_03 - Step 02: Input not existing email");
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputToEmailTextBox(notRegisterEmail);
 		loginPage.clickToLoginButton();
 
@@ -100,7 +100,7 @@ public class Level_04_Login {
 		homePage.openLoginPage();
 
 		System.out.println("Login_04 - Step 02: Input existing email and empty password");
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputToEmailTextBox(randEmail);
 		loginPage.clickToLoginButton();
 
@@ -114,7 +114,7 @@ public class Level_04_Login {
 		homePage.openLoginPage();
 
 		System.out.println("Login_05 - Step 02: Input existing email and incorrect password");
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputToEmailTextBox(randEmail);
 		loginPage.inputToPasswordTextbox(firstName);
 		loginPage.clickToLoginButton();
@@ -129,7 +129,7 @@ public class Level_04_Login {
 		homePage.openLoginPage();
 
 		System.out.println("Login_06 - Step 02: Input valid email and valid password");
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputToEmailTextBox(randEmail);
 		loginPage.inputToPasswordTextbox(password);
 		loginPage.clickToLoginButton();

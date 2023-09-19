@@ -8,13 +8,13 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserLoginPageObject;
 
 public class Level_05_Apply_Multiple_Browser extends BaseTest {
 	private WebDriver driver;
-	private HomePageObject homePage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserLoginPageObject loginPage;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -24,12 +24,12 @@ public class Level_05_Apply_Multiple_Browser extends BaseTest {
 
 	@Test
 	public void Login_01_Empty_Data() {
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		System.out.println("Login_01 - Step 01: Click to login link");
 		homePage.openLoginPage();
 
 		System.out.println("Login_01 - Step 02: Click to login button");
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.clickToLoginButton();
 
 		System.out.println("Login_01 - Step 03: Verify error message");
@@ -43,7 +43,7 @@ public class Level_05_Apply_Multiple_Browser extends BaseTest {
 		homePage.openLoginPage();
 
 		System.out.println("Login_02 - Step 02: Input invalid email");
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputToEmailTextBox("Test");
 		loginPage.clickToLoginButton();
 

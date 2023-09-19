@@ -8,31 +8,31 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.AddressPageObject;
-import pageObjects.ChangePasswordPageObject;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.MyProductReviewPageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
+import commons.PageGeneratorManager;
+import pageObjects.nopcommerce.user.UserAddressPageObject;
+import pageObjects.nopcommerce.user.UserChangePasswordPageObject;
+import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
+import pageObjects.nopcommerce.user.UserHomePageObject;
+import pageObjects.nopcommerce.user.UserLoginPageObject;
+import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
+import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
 public class Level_07_MyAccount_Apply_Switch_Page extends BaseTest {
 	private WebDriver driver;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfoPage;
-	private AddressPageObject addressPage;
-	private ChangePasswordPageObject changePasswordPage;
-	private MyProductReviewPageObject myProductReviewPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfoPage;
+	private UserAddressPageObject addressPage;
+	private UserChangePasswordPageObject changePasswordPage;
+	private UserMyProductReviewPageObject myProductReviewPage;
 	private String firstName, lastName, randEmail, password, updateFirstName, updateLastName, updateEmail, companyName;
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		randEmail = "automation" + randomNumber() + "@gmail.net";
 		firstName = "Automation";
