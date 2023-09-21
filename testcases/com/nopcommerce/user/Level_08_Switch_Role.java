@@ -49,13 +49,17 @@ public class Level_08_Switch_Role extends BaseTest {
 		adminLoginPage.clickToLoginButton();
 		Assert.assertTrue(adminLoginPage.isDashboardHeaderDisplay());
 		adminLoginPage.clickLogoutLinkAtAdmin(driver);
+
+		adminLoginPage.openPageUrl(driver, GlobalConstants.USER_PAGE_URL);
+		userHomePage = PageGeneratorManager.getUserHomePage(driver);
+		userLoginPage = userHomePage.openLoginPage();
+		userLoginPage.loginAsUser(randEmail, password);
 	}
 
 	// @Test
 	public void TC_02_Role_Admin() {
 		userHomePage.openPageUrl(driver, GlobalConstants.ADMIN_PAGE_URL);
-		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
-		adminLoginPage.clickToLoginButton();
+		userLoginPage = userHomePage.openLoginPage();
 		Assert.assertTrue(adminLoginPage.isDashboardHeaderDisplay());
 	}
 
