@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	private WebDriver driver;
-	private String projectPath = System.getProperty("user.dir");
+	private String projectPath = GlobalConstants.PROJECT_PATH;
 
 	protected WebDriver getBrowserDriver(String browserName) {
 		// if (browserName.equals("firefox")) {
@@ -85,7 +85,7 @@ public class BaseTest {
 		}
 
 		driver.get(GlobalConstants.USER_PAGE_URL);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		return driver;
 	}
@@ -93,6 +93,20 @@ public class BaseTest {
 	protected int randomNumber() {
 		Random rand = new Random();
 		return rand.nextInt(99999);
+	}
+
+	protected WebDriver openUrl(String browserName, String url) {
+		if (browserName.equals("firefox")) {
+			driver = WebDriverManager.firefoxdriver().create();
+		} else if (browserName.equals("chrome")) {
+			driver = WebDriverManager.chromedriver().create();
+		} else {
+			throw new RuntimeException("Browser name is not valid.");
+		}
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		return driver;
 	}
 
 	protected void sleepInSecond(long timeInSecond) {

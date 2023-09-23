@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce">
   
-<!--  <test name="Run on Firefox">-->
+ <!--  <test name="Run on Firefox">-->
 <!--	  <parameter name = "browser" value = "firefox"/>-->
 <!--    <classes>-->
 <!--      <class name="com.nopcommerce.user.User_05_Multiple_Browser"/>-->
@@ -9,9 +9,9 @@
 <!--  </test>-->
   
   <test name="Run on Headless Chrome">
-	  <parameter name = "browser" value = "firefox"/>
+	  <parameter name = "browser" value = "edge"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_08_Switch_Role"/>
+      <class name="com.nopcommerce.user.Level_10_Dynamic_Locator"/>
     </classes>
   </test>
   
