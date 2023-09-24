@@ -7,4 +7,8 @@ public class HomePageDemoDataGridUI {
 	public static final String TOTAL_PAGINATION = "css=li.qgrd-pagination-page";
 	public static final String PAGINATION_BY_INDEX = "xpath=//li[@class='qgrd-pagination-page'][%s]";
 	public static final String ALL_ROW_EACH_PAGE = "xpath=//tbody/tr";
+
+	public static final String COLUMN_INDEX_BY_NAME = "xpath=//tr/th[text()='%s']/preceding-sibling::th";
+	public static final String TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX = "xpath=//tbody/tr[%s]/td[%s]/input";
+
 }

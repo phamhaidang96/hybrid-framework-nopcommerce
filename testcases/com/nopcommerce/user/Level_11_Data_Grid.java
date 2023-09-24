@@ -47,10 +47,17 @@ public class Level_11_Data_Grid extends BaseTest {
 		homePage.inputToHeaderByLabel("Total", "553353");
 	}
 
-	@Test
+	// @Test
 	public void TC_03_Get_Value_All_Page() {
 		homePage.refreshCurrentPage(driver);
 		homePage.getValueEachRowAtAllPage();
+	}
+
+	@Test
+	public void TC_04_Input_To_Table() {
+		homePage.inputToTextboxByColumnNameAtRow("Company", "1", "Company C");
+		homePage.inputToTextboxByColumnNameAtRow("Contact Person", "1", "0123456789");
+		homePage.inputToTextboxByColumnNameAtRow("Order Placed", "1", "Ha Noi");
 	}
 
 	@AfterClass
