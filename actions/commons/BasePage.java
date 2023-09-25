@@ -22,6 +22,7 @@ import pageObjects.nopcommerce.user.UserChangePasswordPageObject;
 import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
+import pageUIs.DemoDataGrid.HomePageUploadFileUI;
 import pageUIs.nopcommerce.user.BasePageUI;
 
 public class BasePage {
@@ -180,7 +181,12 @@ public class BasePage {
 
 	public void selectItemInDefaultDropdown(WebDriver driver, String locatorType, String textItem) {
 		Select select = new Select(getWebElement(driver, locatorType));
-		select.selectByValue(textItem);
+		select.selectByVisibleText(textItem);
+	}
+
+	public void selectItemInDefaultDropdown(WebDriver driver, String locatorType, String textItem, String... dynamicValues) {
+		Select select = new Select(getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
+		select.selectByVisibleText(textItem);
 	}
 
 	public String getSelectedItemInDefaultDropdown(WebDriver driver, String locatorType) {
@@ -353,11 +359,7 @@ public class BasePage {
 	public boolean isImageLoaded(WebDriver driver, String locatorType) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver, locatorType));
-		if (status) {
-			return true;
-		} else {
-			return false;
-		}
+		return status;
 	}
 
 	public void waitForElementVisible(WebDriver driver, String locatorType) {
@@ -393,6 +395,24 @@ public class BasePage {
 	public void waitForElementClickable(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getLocator(locatorType)));
+	}
+
+	public void waitForElementClickable(WebDriver driver, String locatorType, String... dynamicValues) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
+		explicitWait.until(ExpectedConditions.elementToBeClickable(getLocator(getDynamicXpath(locatorType, dynamicValues))));
+	}
+
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+		String filePath = GlobalConstants.UPLOAD_FILE_FOLDER;
+		String fullFileName = "";
+
+		for (String file : fileNames) {
+			fullFileName = fullFileName + filePath + file + "\n";
+		}
+
+		fullFileName = fullFileName.trim();
+
+		getWebElement(driver, HomePageUploadFileUI.UPLOAD_FILE).sendKeys(fullFileName);
 	}
 
 	public UserCustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {

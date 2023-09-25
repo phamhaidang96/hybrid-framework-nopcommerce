@@ -8,8 +8,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.demoDataGrid.HomePageDemoDataGridObject;
-import pageObject.demoDataGrid.PageGeneratorManager;
+import pageObject.JQuery.HomePageDemoDataGridObject;
+import pageObject.JQuery.PageGeneratorManager;
 
 public class Level_11_Data_Grid extends BaseTest {
 	private WebDriver driver;
@@ -58,6 +58,9 @@ public class Level_11_Data_Grid extends BaseTest {
 		homePage.inputToTextboxByColumnNameAtRow("Company", "1", "Company C");
 		homePage.inputToTextboxByColumnNameAtRow("Contact Person", "1", "0123456789");
 		homePage.inputToTextboxByColumnNameAtRow("Order Placed", "1", "Ha Noi");
+		sleepInSecond(2);
+
+		homePage.selectToDropDownByColumnNameAtRow("Country", "1", "Germany");
 	}
 
 	@AfterClass

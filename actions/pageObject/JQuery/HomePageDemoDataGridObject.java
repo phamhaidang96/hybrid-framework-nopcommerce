@@ -1,4 +1,4 @@
-package pageObject.demoDataGrid;
+package pageObject.JQuery;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,9 +54,16 @@ public class HomePageDemoDataGridObject extends BasePage {
 		return allRowValuesAllPage;
 	}
 
-	public void inputToTextboxByColumnNameAtRow(String columnName, String rowNumber, String textValues) {
+	public void inputToTextboxByColumnNameAtRow(String columnName, String rowNumber, String textInput) {
 		int indexColumn = getElementSize(driver, HomePageDemoDataGridUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
 		waitForElementVisible(driver, HomePageDemoDataGridUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(indexColumn));
-		sendkeyToElement(driver, HomePageDemoDataGridUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, textValues, rowNumber, String.valueOf(indexColumn));
+		sendkeyToElement(driver, HomePageDemoDataGridUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, textInput, rowNumber, String.valueOf(indexColumn));
+	}
+
+	public void selectToDropDownByColumnNameAtRow(String columnName, String rowNumber, String textSelect) {
+		int indexColumn = getElementSize(driver, HomePageDemoDataGridUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
+
+		waitForElementClickable(driver, HomePageDemoDataGridUI.DROPDOWM_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(indexColumn));
+		selectItemInDefaultDropdown(driver, HomePageDemoDataGridUI.DROPDOWM_BY_COLUMN_INDEX_AND_ROW_INDEX, textSelect, rowNumber, String.valueOf(indexColumn));
 	}
 }
