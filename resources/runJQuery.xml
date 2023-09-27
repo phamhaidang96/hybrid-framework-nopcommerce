@@ -8,6 +8,9 @@
 <!--      <class name="com.nopcommerce.user.Level_11_Data_Grid"/>-->
 <!--    </classes>-->
 <!--  </test>-->
+  <listeners>
+	  <listener class-name = "commons.MethodListener"/>
+  </listeners>
   
    <test name="Demo Data Upload file">
 	  <parameter name = "url" value = "https://blueimp.github.io/jQuery-File-Upload/"/>
