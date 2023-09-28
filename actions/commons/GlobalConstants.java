@@ -11,6 +11,9 @@ public class GlobalConstants {
 	public static final String BROWSER_LOG_FOLDER = PROJECT_PATH + File.separator + "browserLogs";
 	public static final String DRAG_DROP_HTML5 = PROJECT_PATH + File.separator + "dragDropHTML5";
 	public static final String AUTO_IT_SCRIPT = PROJECT_PATH + File.separator + "autoIT";
+	public static final String REPORTNG_SCREENSHOT = PROJECT_PATH + File.separator + "reportNGImage" + File.separator;
+	public static final String EXTENT_PATH = PROJECT_PATH + File.separator + "extentReportV2";
+	public static final String JAVA_VERSION = System.getProperty("java.version");
 	public static final String DB_DEV_URL = "";
 	public static final String DB_DEV_USER = "";
 	public static final String DB_DEV_PASS = "";

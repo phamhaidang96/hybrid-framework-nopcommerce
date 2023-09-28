@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce">
   
- <!--  <test name="Run on Firefox">-->
+<!--  <test name="Run on Firefox">-->
 <!--	  <parameter name = "browser" value = "firefox"/>-->
 <!--    <classes>-->
 <!--      <class name="com.nopcommerce.user.User_05_Multiple_Browser"/>-->
 <!--    </classes>-->
 <!--  </test>-->
   
-  <test name="Run on Headless Chrome">
+  <listeners>
+	  <listener class-name = "commons.MethodListener"/>
+<!--	  <listener class-name = "reportConfig.ReportNGListener"/>-->
+<!--	  <listener class-name = "reportConfig.ReportNGListenerBase64"/>-->
+	  <listener class-name = "reportConfig.ExtentReportListenerV5"/>
+	  <listener class-name = "org.uncommons.reportng.HTMLReporter"/>
+	  <listener class-name = "org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  
+  <test name="Run on Chrome">
 	  <parameter name = "browser" value = "chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_10_Dynamic_Locator"/>
+      <class name="com.nopcommerce.user.Level_18_Extent_Report_v5"/>
     </classes>
   </test>
   

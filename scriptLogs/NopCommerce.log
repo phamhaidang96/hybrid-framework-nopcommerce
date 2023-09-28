@@ -1,0 +1,99 @@
+[2023-09-27 22:11:28,343 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-27 22:11:29,333 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-27 22:11:30,493 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-27 22:11:30,856 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation72753@gmail.net' and Password 'autoTest1'
+[2023-09-27 22:11:31,622 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-27 22:11:32,244 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-27 22:11:34,122 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-27 22:11:34,123 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-27 22:11:36,107 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-27 22:14:02,125 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-27 22:14:03,518 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-27 22:14:04,662 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-27 22:14:05,047 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation2345@gmail.net' and Password 'autoTest1'
+[2023-09-27 22:14:05,846 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-27 22:14:06,530 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-27 22:14:08,530 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-27 22:14:08,531 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-27 22:14:10,423 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-27 22:18:30,896 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-27 22:18:31,930 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-27 22:18:32,830 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-27 22:18:33,163 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation2963@gmail.net' and Password 'autoTest1'
+[2023-09-27 22:18:33,864 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-27 22:18:34,483 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-27 22:18:35,920 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-27 22:18:35,921 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-27 22:18:37,029 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-27 22:46:34,598 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-27 22:46:35,661 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-27 22:46:36,516 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-27 22:46:36,871 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation16222@gmail.net' and Password 'autoTest1'
+[2023-09-27 22:46:37,546 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-27 22:46:38,193 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-27 22:46:39,995 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-27 22:46:39,995 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-27 22:46:42,022 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-27 22:46:42,068 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - ---------------------- Failed -----------------------
+[2023-09-28 14:53:13,843 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-28 14:53:14,856 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-28 14:53:15,804 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-28 14:53:16,165 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation29842@gmail.net' and Password 'autoTest1'
+[2023-09-28 14:53:16,863 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-28 14:53:17,500 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-28 14:53:19,012 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-28 14:53:19,012 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-28 14:53:20,098 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-28 14:53:20,139 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - ---------------------- Failed -----------------------
+[2023-09-28 14:54:33,092 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-28 14:54:34,026 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-28 14:54:35,100 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-28 14:54:35,430 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation93863@gmail.net' and Password 'autoTest1'
+[2023-09-28 14:54:36,119 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-28 14:54:36,690 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-28 14:54:38,469 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-28 14:54:38,470 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-28 14:54:40,309 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-28 14:54:40,343 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - ---------------------- Failed -----------------------
+[2023-09-28 14:59:25,073 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-28 14:59:26,013 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-28 14:59:27,108 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-28 14:59:27,461 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation32866@gmail.net' and Password 'autoTest1'
+[2023-09-28 14:59:28,229 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-28 14:59:28,832 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-28 14:59:30,747 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-28 14:59:30,747 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-28 14:59:32,818 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-28 15:37:04,466 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-28 15:37:05,452 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-28 15:37:06,555 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-28 15:37:06,954 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation81033@gmail.net' and Password 'autoTest1'
+[2023-09-28 15:37:07,712 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-28 15:37:08,306 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-28 15:37:10,183 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-28 15:37:10,184 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-28 15:37:12,237 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-28 15:41:12,053 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-28 15:41:13,116 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-28 15:41:14,200 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-28 15:41:14,554 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation41116@gmail.net' and Password 'autoTest1'
+[2023-09-28 15:41:15,290 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-28 15:41:15,885 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-28 15:41:17,829 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-28 15:41:17,830 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-28 15:41:19,768 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-28 15:54:09,789 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-09-28 15:54:10,788 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-09-28 15:54:11,936 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-09-28 15:54:12,292 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation13346@gmail.net' and Password 'autoTest1'
+[2023-09-28 15:54:13,005 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-09-28 15:54:13,605 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-09-28 15:54:14,983 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-09-28 15:54:14,984 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-09-28 15:54:16,916 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-09-28 16:23:51,652 INFO com.nopcommerce.user.Level_16_Extent_Report_v2] - ---------------------- Failed -----------------------
+[2023-09-28 22:10:50,158 INFO com.nopcommerce.user.Level_17_Extent_Report_v3] - ---------------------- Failed -----------------------
+[2023-09-28 22:12:33,617 INFO com.nopcommerce.user.Level_17_Extent_Report_v3] - ---------------------- Failed -----------------------
+[2023-09-28 22:20:26,206 INFO com.nopcommerce.user.Level_17_Extent_Report_v3] - ---------------------- Failed -----------------------
+[2023-09-28 22:22:53,203 INFO com.nopcommerce.user.Level_17_Extent_Report_v3] - ---------------------- Failed -----------------------
+[2023-09-28 22:31:13,736 INFO com.nopcommerce.user.Level_17_Extent_Report_v3] - ---------------------- Failed -----------------------

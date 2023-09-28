@@ -3,6 +3,8 @@ package commons;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,6 +19,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	private WebDriver driver;
 	private String projectPath = GlobalConstants.PROJECT_PATH;
+	protected final Log log;
+
+	protected BaseTest() {
+		log = LogFactory.getLog(getClass());
+	}
 
 	protected WebDriver getBrowserDriver(String browserName) {
 		// if (browserName.equals("firefox")) {
@@ -123,12 +130,12 @@ public class BaseTest {
 		boolean status = true;
 		try {
 			Assert.assertTrue(condition);
-			System.out.println("---------------------- Passed -----------------------");
+			log.info("---------------------- Passed -----------------------");
 		} catch (Throwable e) {
 			status = false;
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
-			System.out.println("---------------------- Failed -----------------------");
+			log.info("---------------------- Failed -----------------------");
 		}
 		return status;
 	}
@@ -137,12 +144,12 @@ public class BaseTest {
 		boolean status = true;
 		try {
 			Assert.assertFalse(condition);
-			System.out.println("---------------------- Passed -----------------------");
+			log.info("---------------------- Passed -----------------------");
 		} catch (Throwable e) {
 			status = false;
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
-			System.out.println("---------------------- Failed -----------------------");
+			log.info("---------------------- Failed -----------------------");
 		}
 		return status;
 	}
@@ -151,13 +158,17 @@ public class BaseTest {
 		boolean status = true;
 		try {
 			Assert.assertEquals(actual, expected);
-			System.out.println("---------------------- Passed -----------------------");
+			log.info("---------------------- Passed -----------------------");
 		} catch (Throwable e) {
 			status = false;
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
-			System.out.println("---------------------- Failed -----------------------");
+			log.info("---------------------- Failed -----------------------");
 		}
 		return status;
+	}
+
+	public WebDriver getDriverInstance() {
+		return this.driver;
 	}
 }
