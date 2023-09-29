@@ -1,6 +1,5 @@
 package commons;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -18,6 +17,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Step;
 import pageObjects.nopcommerce.admin.AdminLoginPageObject;
 import pageObjects.nopcommerce.user.UserAddressPageObject;
 import pageObjects.nopcommerce.user.UserChangePasswordPageObject;
@@ -33,6 +33,7 @@ public class BasePage {
 		return new BasePage();
 	}
 
+	@Step("Open Url {1}")
 	public void openPageUrl(WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
 	}
@@ -500,12 +501,14 @@ public class BasePage {
 		clickToElement(driver, BasePageUI.MY_ACCOUNT_DYNAMIC_LINK, pageNames);
 	}
 
+	@Step("Click to 'Logout Link' with role User")
 	public UserHomePageObject clickLogoutLinkAtUser(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.USER_LOGOUT_LINK);
 		clickToElement(driver, BasePageUI.USER_LOGOUT_LINK);
 		return PageGeneratorManager.getUserHomePage(driver);
 	}
 
+	@Step("Click to 'Logout Link' with role Admin")
 	public AdminLoginPageObject clickLogoutLinkAtAdmin(WebDriver driver) {
 		waitForElementInvisible(driver, BasePageUI.ADMIN_BUSY_LOADING);
 		waitForElementClickable(driver, BasePageUI.ADMIN_LOGOUT_LINK);

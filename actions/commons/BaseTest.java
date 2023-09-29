@@ -1,5 +1,6 @@
 package commons;
 
+import java.io.File;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -13,6 +14,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -20,6 +22,11 @@ public class BaseTest {
 	private WebDriver driver;
 	private String projectPath = GlobalConstants.PROJECT_PATH;
 	protected final Log log;
+
+	@BeforeSuite
+	public void initBeforeSuite() {
+		deleteAllFileInFolder("allure-json");
+	}
 
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
@@ -170,5 +177,22 @@ public class BaseTest {
 
 	public WebDriver getDriverInstance() {
 		return this.driver;
+	}
+
+	public void deleteAllFileInFolder(String folderName) {
+		try {
+			String pathFolderDownload = GlobalConstants.PROJECT_PATH + File.separator + folderName;
+			File file = new File(pathFolderDownload);
+			File[] listOfFiles = file.listFiles();
+			if (listOfFiles.length != 0) {
+				for (int i = 0; i < listOfFiles.length; i++) {
+					if (listOfFiles[i].isFile() && !listOfFiles[i].getName().equals("environment.properties")) {
+						new File(listOfFiles[i].toString()).delete();
+					}
+				}
+			}
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+		}
 	}
 }

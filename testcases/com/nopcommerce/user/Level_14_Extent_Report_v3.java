@@ -16,7 +16,7 @@ import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserLoginPageObject;
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
-public class Level_17_Extent_Report_v3 extends BaseTest {
+public class Level_14_Extent_Report_v3 extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject userHomePage;
 	private UserRegisterPageObject userRegisterPage;

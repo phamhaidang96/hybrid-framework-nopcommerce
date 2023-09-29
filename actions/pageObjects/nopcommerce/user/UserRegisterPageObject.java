@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.user;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import io.qameta.allure.Step;
 import pageUIs.nopcommerce.user.UserRegisterPageUI;
 
 public class UserRegisterPageObject extends BasePage {
@@ -78,6 +78,7 @@ public class UserRegisterPageObject extends BasePage {
 		return getElementText(driver, UserRegisterPageUI.EXISTING_EMAIL_ERROR_MESSAGE);
 	}
 
+	@Step("Register new User")
 	public void registerNewUser(String firsrtName, String lastName, String email, String password, String confirmPassword) {
 		inputToFirstNameTextbox(firsrtName);
 		inputToLastNameTextbox(lastName);
