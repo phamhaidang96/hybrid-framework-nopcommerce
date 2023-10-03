@@ -4,7 +4,6 @@ import java.util.Set;
 
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -42,10 +41,7 @@ public class Common_02_Register_New_Account_Cookie extends BaseTest {
 		userHomePage = userLoginPage.loginAsUser(randEmail, password);
 
 		loggedCookies = userHomePage.getAllCookies(driver);
-	}
 
-	@AfterTest
-	public void afterClass() {
-		driver.quit();
+		closeBrowserDriver();
 	}
 }
