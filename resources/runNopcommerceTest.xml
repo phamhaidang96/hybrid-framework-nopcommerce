@@ -22,7 +22,7 @@
 	  <parameter name = "browser" value = "chrome"/>
     <classes>
       <class name="com.nopcommerce.common.Common_02_Register_New_Account_Cookie"/>
-      <class name="com.nopcommerce.user.Level_17_Custom_Close_Driver"/>
+      <class name="com.nopcommerce.user.Level_07_My_Account"/>
     </classes>
   </test>
   

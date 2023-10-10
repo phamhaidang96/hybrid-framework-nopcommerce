@@ -12,9 +12,9 @@ public class UserCustomerInfoPageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public void selectMaleRadioButton() {
-		waitForElementVisible(driver, UserCustomerInfoPageUI.MALE_RADIO_BUTTON);
-		clickToElement(driver, UserCustomerInfoPageUI.MALE_RADIO_BUTTON);
+	public void selectGenderByText(String gender) {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.GENDER_BY_TEXT, gender);
+		clickToElement(driver, UserCustomerInfoPageUI.GENDER_BY_TEXT, gender);
 	}
 
 	public void inputToFirstNameTextbox(String firstName) {
@@ -45,6 +45,72 @@ public class UserCustomerInfoPageObject extends BasePage {
 	public String getUpdateSeccessfullMessage() {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.UPDATE_SUCCESS_MESSAGE);
 		return getElementText(driver, UserCustomerInfoPageUI.UPDATE_SUCCESS_MESSAGE);
+	}
+
+	public void selectDateOfBirthDropdown(String dateOfBirth) {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.DATE_OF_BIRTH);
+		selectItemInDefaultDropdown(driver, UserCustomerInfoPageUI.DATE_OF_BIRTH, dateOfBirth);
+	}
+
+	public void selectMonthOfBirthDropdown(String monthOfBirth) {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.MONTH_OF_BIRTH);
+		selectItemInDefaultDropdown(driver, UserCustomerInfoPageUI.MONTH_OF_BIRTH, monthOfBirth);
+	}
+
+	public void selectYearOfBirthDropdown(String yearOfBirth) {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.YEAR_OF_BIRTH);
+		selectItemInDefaultDropdown(driver, UserCustomerInfoPageUI.YEAR_OF_BIRTH, yearOfBirth);
+	}
+
+	public boolean isUpdateSuccessfullyMessageDisplayed() {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.UPDATE_SUCCESS_MESSAGE);
+		return isElementDisplayed(driver, UserCustomerInfoPageUI.UPDATE_SUCCESS_MESSAGE);
+	}
+
+	public boolean isGenderSelected(String gender) {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.GENDER_BY_TEXT, gender);
+		return isElementSelected(driver, UserCustomerInfoPageUI.GENDER_BY_TEXT, gender);
+	}
+
+	public String isFirstNameUpdated() {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.FIRST_NAME_TEXTBOX);
+		return getElementText(driver, UserCustomerInfoPageUI.FIRST_NAME_TEXTBOX);
+	}
+
+	public String isLastNameUpdated() {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.LAST_NAME_TEXTBOX);
+		return getElementText(driver, UserCustomerInfoPageUI.LAST_NAME_TEXTBOX);
+	}
+
+	public String isDateOfBirthUpdated() {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.DATE_OF_BIRTH);
+		return getSelectedItemInDefaultDropdown(driver, UserCustomerInfoPageUI.DATE_OF_BIRTH);
+	}
+
+	public String isMonthOfBirthUpdated() {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.MONTH_OF_BIRTH);
+		return getSelectedItemInDefaultDropdown(driver, UserCustomerInfoPageUI.MONTH_OF_BIRTH);
+	}
+
+	public String isYearOfBirthUpdated() {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.YEAR_OF_BIRTH);
+		return getSelectedItemInDefaultDropdown(driver, UserCustomerInfoPageUI.YEAR_OF_BIRTH);
+	}
+
+	public String isEmailUpdated() {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.EMAIL_TEXTBOX);
+		return getElementText(driver, UserCustomerInfoPageUI.EMAIL_TEXTBOX);
+	}
+
+	public String isCompanyNameUpdated() {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.COMPANY_NAME_TEXTBOX);
+		return getElementText(driver, UserCustomerInfoPageUI.COMPANY_NAME_TEXTBOX);
+	}
+
+	public void closeUpdateSuccessMessage() {
+		waitForElementVisible(driver, UserCustomerInfoPageUI.ICON_CLOSE_UPDATE_SUCCESS_MESSAGE);
+		clickToElement(driver, UserCustomerInfoPageUI.ICON_CLOSE_UPDATE_SUCCESS_MESSAGE);
+		waitForElementUndisplay(driver, UserCustomerInfoPageUI.ICON_CLOSE_UPDATE_SUCCESS_MESSAGE);
 	}
 
 }

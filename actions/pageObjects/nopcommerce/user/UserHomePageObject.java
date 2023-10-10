@@ -41,4 +41,10 @@ public class UserHomePageObject extends BasePage {
 		clickToElement(driver, UserHomePageUI.MY_ACCOUNT_LINK);
 		return PageGeneratorManager.getUserCustomerInfoPage(driver);
 	}
+
+	public void closeMessageLoginSuccessfully() {
+		waitForElementVisible(driver, UserHomePageUI.ICON_CLOSE_LOGIN_SUCCESS_MESSAGE);
+		clickToElement(driver, UserHomePageUI.ICON_CLOSE_LOGIN_SUCCESS_MESSAGE);
+		waitForElementUndisplay(driver, UserHomePageUI.ICON_CLOSE_LOGIN_SUCCESS_MESSAGE);
+	}
 }

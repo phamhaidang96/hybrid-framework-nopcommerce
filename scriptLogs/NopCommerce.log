@@ -97,3 +97,91 @@
 [2023-09-28 22:20:26,206 INFO com.nopcommerce.user.Level_17_Extent_Report_v3] - ---------------------- Failed -----------------------
 [2023-09-28 22:22:53,203 INFO com.nopcommerce.user.Level_17_Extent_Report_v3] - ---------------------- Failed -----------------------
 [2023-09-28 22:31:13,736 INFO com.nopcommerce.user.Level_17_Extent_Report_v3] - ---------------------- Failed -----------------------
+[2023-10-09 18:48:22,758 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 01: Navigate to 'Register' page
+[2023-10-09 18:48:23,693 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Pre-condition - Step 02: Register new user
+[2023-10-09 18:48:24,911 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 01: Navigate to 'Login' page
+[2023-10-09 18:48:25,252 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 02: Navigate to 'Home' page with Email 'automation48982@gmail.net' and Password 'autoTest1'
+[2023-10-09 18:48:25,955 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 03: Click to Logout link
+[2023-10-09 18:48:26,543 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 04: Switch to role Admin
+[2023-10-09 18:48:28,409 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 05: Navigate to 'Login' page
+[2023-10-09 18:48:28,425 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 06: Click to 'Login' button
+[2023-10-09 18:48:30,975 INFO com.nopcommerce.user.Level_14_Log_ReportNG] - Role user - Step 07: Verify dashboard display on header
+[2023-10-10 20:42:49,985 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 20:42:49,986 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (3b5d64db44dfc7c07510970fe5bcd36c)
+[2023-10-10 20:52:58,329 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 20:52:58,330 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (2bf6d18ba9a1382596cac5f16a236f0c)
+[2023-10-10 20:53:46,748 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 20:53:46,749 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (4aeb7837e29c7591fae99bac435c5667)
+[2023-10-10 20:54:25,234 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 20:54:25,253 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (4ad981d7ffd2e4dea528ca721a44d556)
+[2023-10-10 23:21:37,184 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
+[2023-10-10 23:21:37,230 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update First name
+[2023-10-10 23:21:37,350 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Last name
+[2023-10-10 23:21:37,423 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Date of birth
+[2023-10-10 23:21:37,468 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 23:21:37,468 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (0dccb4f57047d9f658bea1c318a9a6e9)
+[2023-10-10 23:23:25,088 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
+[2023-10-10 23:23:25,131 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update First name
+[2023-10-10 23:23:25,257 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Last name
+[2023-10-10 23:23:25,346 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Date of birth
+[2023-10-10 23:23:25,385 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 23:23:25,385 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (4f6c49a3f8d901deb6f2233c599f100d)
+[2023-10-10 23:28:51,638 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
+[2023-10-10 23:28:51,686 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update First name
+[2023-10-10 23:28:51,829 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Last name
+[2023-10-10 23:28:51,916 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Date of birth
+[2023-10-10 23:28:51,965 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 23:28:51,965 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (e592c209693869d29a28801d91125517)
+[2023-10-10 23:38:17,308 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
+[2023-10-10 23:38:17,353 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update First name
+[2023-10-10 23:38:17,492 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Last name
+[2023-10-10 23:38:22,590 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Date of birth
+[2023-10-10 23:38:22,667 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 23:38:22,667 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (50e4cbf21e6ecd4848384e5d78ec7a2b)
+[2023-10-10 23:39:53,674 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
+[2023-10-10 23:39:53,717 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update First name
+[2023-10-10 23:39:53,843 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Last name
+[2023-10-10 23:39:58,933 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Date of birth
+[2023-10-10 23:39:59,031 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Month of birth
+[2023-10-10 23:39:59,075 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Year of birth
+[2023-10-10 23:39:59,119 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Email
+[2023-10-10 23:39:59,211 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Company name
+[2023-10-10 23:40:12,673 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 23:40:12,673 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (25660b8b4b15b88656e666ee6c461faf)
+[2023-10-10 23:40:12,674 INFO com.nopcommerce.user.Level_07_My_Account] - java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:23135
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MacBook-Pro-cua-Pham.local', ip: 'fe80:0:0:0:10b2:8ed5:ecaa:de81%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '11.0.18'
+Driver info: driver.version: RemoteWebDriver
+[2023-10-10 23:41:58,214 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
+[2023-10-10 23:41:58,259 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 02: Update First name
+[2023-10-10 23:41:58,396 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 03: Update Last name
+[2023-10-10 23:41:58,484 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 04: Update Date of birth
+[2023-10-10 23:41:58,547 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 05: Update Month of birth
+[2023-10-10 23:41:58,591 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 06: Update Year of birth
+[2023-10-10 23:41:58,635 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 07: Update Email
+[2023-10-10 23:41:58,721 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 08: Update Company name
+[2023-10-10 23:41:58,788 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 09: Update Company name
+[2023-10-10 23:41:59,507 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 23:41:59,507 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (74ce538caae8048df32337c1a7086ec2)
+[2023-10-10 23:45:36,191 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
+[2023-10-10 23:45:36,232 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 02: Update First name
+[2023-10-10 23:45:36,355 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 03: Update Last name
+[2023-10-10 23:45:36,439 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 04: Update Date of birth
+[2023-10-10 23:45:36,502 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 05: Update Month of birth
+[2023-10-10 23:45:36,547 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 06: Update Year of birth
+[2023-10-10 23:45:36,592 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 07: Update Email
+[2023-10-10 23:45:36,672 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 08: Update Company name
+[2023-10-10 23:45:36,739 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 09: Update Company name
+[2023-10-10 23:45:42,477 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 23:45:42,477 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (3b01ea4ece8839f54508cb516b9f4ee8)
+[2023-10-10 23:54:59,686 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
+[2023-10-10 23:54:59,729 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 02: Update First name
+[2023-10-10 23:54:59,855 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 03: Update Last name
+[2023-10-10 23:54:59,941 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 04: Update Date of birth
+[2023-10-10 23:55:00,002 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 05: Update Month of birth
+[2023-10-10 23:55:00,046 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 06: Update Year of birth
+[2023-10-10 23:55:00,091 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 07: Update Email
+[2023-10-10 23:55:00,196 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 08: Update Company name
+[2023-10-10 23:55:00,267 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 09: Update Company name
+[2023-10-10 23:55:42,525 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-10 23:55:42,526 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (6593d175e40af70375bac3339c44c351)

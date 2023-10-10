@@ -313,6 +313,10 @@ public class BasePage {
 		return getWebElement(driver, locatorType).isSelected();
 	}
 
+	public boolean isElementSelected(WebDriver driver, String locatorType, String... dynamicValues) {
+		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).isSelected();
+	}
+
 	public void switchToFrameIframe(WebDriver driver, String locatorType) {
 		driver.switchTo().frame(getWebElement(driver, locatorType));
 	}
@@ -482,11 +486,19 @@ public class BasePage {
 	}
 
 	public UserMyProductReviewPageObject openMyProductReviewPage(WebDriver driver) {
-		waitForElementVisible(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
+		waitForElementUndisplay(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
 		clickToElement(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
 		return PageGeneratorManager.getUserMyProductReviewPage(driver);
 	}
 
+	/**
+	 * Open pages at My Account by Name
+	 * 
+	 * @author HaiDang
+	 * @param driver
+	 * @param pageNames
+	 * @return new Page
+	 */
 	public BasePage openPagesAtMyAccountByName(WebDriver driver, String pageNames) {
 		waitForElementVisible(driver, BasePageUI.MY_ACCOUNT_DYNAMIC_LINK, pageNames);
 		clickToElement(driver, BasePageUI.MY_ACCOUNT_DYNAMIC_LINK, pageNames);
