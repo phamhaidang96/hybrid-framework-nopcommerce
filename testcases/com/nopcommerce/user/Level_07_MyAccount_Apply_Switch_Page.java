@@ -72,7 +72,7 @@ public class Level_07_MyAccount_Apply_Switch_Page extends BaseTest {
 		customerInfoPage = homePage.openMyAccountPage();
 
 		System.out.println("MyAccount_01 - Step 02: Update user data");
-		customerInfoPage.selectMaleRadioButton();
+		customerInfoPage.selectGenderByText("Male");
 		customerInfoPage.inputToFirstNameTextbox(updateFirstName);
 		customerInfoPage.inputToLastNameTextbox(updateLastName);
 		customerInfoPage.inputToEmailTextbox(updateEmail);

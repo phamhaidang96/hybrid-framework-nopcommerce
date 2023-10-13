@@ -1,0 +1,36 @@
+1697102141639	geckodriver	INFO	Listening on 127.0.0.1:24527
+1697102141648	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1s/th7lqssx53n38hy4dzkkjpvw0000gp/T/rust_mozprofileyxM5pz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697102142019	Marionette	INFO	Marionette enabled
+2023-10-12 16:15:42.106 plugin-container[47924:1598556] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-12 16:15:42.106 plugin-container[47924:1598556] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-12 16:15:42.118 plugin-container[47924:1598556] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-12 16:15:42.118 plugin-container[47924:1598556] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-12 16:15:42.118 plugin-container[47924:1598554] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-12 16:15:42.118 plugin-container[47924:1598554] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1697102142123	Marionette	INFO	Listening on port 61744
+Read port: 61744
+1697102142243	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+2023-10-12 09:15:42.856 plugin-container[47927:1598742] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-12 09:15:42.856 plugin-container[47927:1598742] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-12 09:15:42.863 plugin-container[47927:1598742] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-12 09:15:42.863 plugin-container[47927:1598742] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-10-12 09:15:42.863 plugin-container[47927:1598743] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-10-12 09:15:42.863 plugin-container[47927:1598743] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+1697102162255	Marionette	INFO	Stopped listening on port 61744
+JavaScript warning: https://demo.nopcommerce.com/js/ugb2rim6qtxni-qfi-iama.scripts.js?v=IhJEl_-QC2MC4IKAv2wqLUVRXT0, line 2: Script terminated by timeout at:
+ur@https://demo.nopcommerce.com/js/ugb2rim6qtxni-qfi-iama.scripts.js?v=IhJEl_-QC2MC4IKAv2wqLUVRXT0:2:8049
+

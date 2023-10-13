@@ -73,6 +73,9 @@ public class BaseTest {
 		// }
 
 		if (browserName.equals("firefox")) {
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.BROWSER_LOG_FOLDER + "FirefoxLog.log");
+
 			driver = WebDriverManager.firefoxdriver().create();
 		} else if (browserName.equals("h_firefox")) {
 			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
@@ -83,6 +86,9 @@ public class BaseTest {
 		} else if (browserName.equals("edge")) {
 			driver = WebDriverManager.edgedriver().create();
 		} else if (browserName.equals("chrome")) {
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
+
 			driver = WebDriverManager.chromedriver().create();
 		} else if (browserName.equals("h_chrome")) {
 			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");

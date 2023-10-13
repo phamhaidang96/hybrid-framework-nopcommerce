@@ -1,11 +1,39 @@
-[2023-10-10 23:54:59,686 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
-[2023-10-10 23:54:59,729 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 02: Update First name
-[2023-10-10 23:54:59,855 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 03: Update Last name
-[2023-10-10 23:54:59,941 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 04: Update Date of birth
-[2023-10-10 23:55:00,002 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 05: Update Month of birth
-[2023-10-10 23:55:00,046 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 06: Update Year of birth
-[2023-10-10 23:55:00,091 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 07: Update Email
-[2023-10-10 23:55:00,196 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 08: Update Company name
-[2023-10-10 23:55:00,267 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 09: Update Company name
-[2023-10-10 23:55:42,525 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
-[2023-10-10 23:55:42,526 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (6593d175e40af70375bac3339c44c351)
+[2023-10-12 16:20:03,542 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 01: Update Gender
+[2023-10-12 16:20:03,588 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 02: Update First name
+[2023-10-12 16:20:03,687 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 03: Update Last name
+[2023-10-12 16:20:03,763 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 04: Update Date of birth
+[2023-10-12 16:20:03,823 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 05: Update Month of birth
+[2023-10-12 16:20:03,869 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 06: Update Year of birth
+[2023-10-12 16:20:03,913 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 07: Update Email
+[2023-10-12 16:20:03,976 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 08: Update Company name
+[2023-10-12 16:20:04,044 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 09: Click button 'Save'
+[2023-10-12 16:20:04,754 INFO com.nopcommerce.user.Level_07_My_Account] - TC_01 - Step 10: Verify data updated
+
+[2023-10-12 16:20:05,345 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 01: Open 'Addresses' page
+[2023-10-12 16:20:05,756 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 02: Click button 'Add new'
+[2023-10-12 16:20:06,146 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 03: Input to First name textbox
+[2023-10-12 16:20:06,221 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 04: Input to Last name textbox
+[2023-10-12 16:20:06,287 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 05: Input to Email textbox
+[2023-10-12 16:20:06,370 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 06: Input to Company textbox
+[2023-10-12 16:20:06,451 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 07: Select Country
+[2023-10-12 16:20:06,513 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 08: Select State/Province
+[2023-10-12 16:20:07,654 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 09: Input to City textbox
+[2023-10-12 16:20:07,726 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 10: Input to Address1 textbox
+[2023-10-12 16:20:07,779 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 11: Input to Address2 textbox
+[2023-10-12 16:20:07,837 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 12: Input to Zipcode textbox
+[2023-10-12 16:20:07,900 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 13: Input to Phone number textbox
+[2023-10-12 16:20:07,965 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 14: Click to Save button
+[2023-10-12 16:20:08,892 INFO com.nopcommerce.user.Level_07_My_Account] - TC_02 - Step 15: Verify data inputed
+[2023-10-12 16:20:08,925 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:08,948 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:08,972 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:08,994 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:09,015 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:09,036 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:09,056 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:09,077 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:09,101 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:09,137 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:09,159 INFO com.nopcommerce.user.Level_07_My_Account] - ---------------------- Passed -----------------------
+[2023-10-12 16:20:09,166 INFO com.nopcommerce.user.Level_07_My_Account] - OS name = mac os x
+[2023-10-12 16:20:09,166 INFO com.nopcommerce.user.Level_07_My_Account] - Driver instance name = chromedriver: chrome on mac (9b06f83954ec845cd88beb2a39413a3b)

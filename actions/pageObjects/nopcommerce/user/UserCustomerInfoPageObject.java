@@ -74,12 +74,12 @@ public class UserCustomerInfoPageObject extends BasePage {
 
 	public String isFirstNameUpdated() {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.FIRST_NAME_TEXTBOX);
-		return getElementText(driver, UserCustomerInfoPageUI.FIRST_NAME_TEXTBOX);
+		return getElementAttribute(driver, UserCustomerInfoPageUI.FIRST_NAME_TEXTBOX, "value");
 	}
 
 	public String isLastNameUpdated() {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.LAST_NAME_TEXTBOX);
-		return getElementText(driver, UserCustomerInfoPageUI.LAST_NAME_TEXTBOX);
+		return getElementAttribute(driver, UserCustomerInfoPageUI.LAST_NAME_TEXTBOX, "value");
 	}
 
 	public String isDateOfBirthUpdated() {
@@ -99,18 +99,11 @@ public class UserCustomerInfoPageObject extends BasePage {
 
 	public String isEmailUpdated() {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.EMAIL_TEXTBOX);
-		return getElementText(driver, UserCustomerInfoPageUI.EMAIL_TEXTBOX);
+		return getElementAttribute(driver, UserCustomerInfoPageUI.EMAIL_TEXTBOX, "value");
 	}
 
 	public String isCompanyNameUpdated() {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.COMPANY_NAME_TEXTBOX);
-		return getElementText(driver, UserCustomerInfoPageUI.COMPANY_NAME_TEXTBOX);
+		return getElementAttribute(driver, UserCustomerInfoPageUI.COMPANY_NAME_TEXTBOX, "value");
 	}
-
-	public void closeUpdateSuccessMessage() {
-		waitForElementVisible(driver, UserCustomerInfoPageUI.ICON_CLOSE_UPDATE_SUCCESS_MESSAGE);
-		clickToElement(driver, UserCustomerInfoPageUI.ICON_CLOSE_UPDATE_SUCCESS_MESSAGE);
-		waitForElementUndisplay(driver, UserCustomerInfoPageUI.ICON_CLOSE_UPDATE_SUCCESS_MESSAGE);
-	}
-
 }

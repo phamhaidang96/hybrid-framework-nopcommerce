@@ -233,6 +233,10 @@ public class BasePage {
 		return getWebElement(driver, locatorType).getText();
 	}
 
+	public boolean isContainTextDisplayed(WebDriver driver, String locatorType, String textValues) {
+		return getWebElement(driver, locatorType).getText().contains(textValues);
+	}
+
 	public String getElementText(WebDriver driver, String locatorType, String... dynamicValues) {
 		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).getText();
 	}
