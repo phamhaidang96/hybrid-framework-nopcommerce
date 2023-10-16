@@ -20,7 +20,7 @@ public class Common_02_Register_New_Account_Cookie extends BaseTest {
 	private UserRegisterPageObject userRegisterPage;
 	private UserLoginPageObject userLoginPage;
 	private DataHelper dataFaker;
-	private String firstName, lastName, randEmail, password;
+	private String firstName, lastName, email, password;
 	public static Set<Cookie> loggedCookies;
 
 	@Parameters("browser")
@@ -32,21 +32,21 @@ public class Common_02_Register_New_Account_Cookie extends BaseTest {
 
 		firstName = dataFaker.getFirstName();
 		lastName = dataFaker.getLastName();
-		randEmail = dataFaker.getEmail();
+		email = dataFaker.getEmail();
 		password = dataFaker.getPassword();
 
 		userRegisterPage = userHomePage.openRegisterPage();
 
 		log.info("Register new user with info: ");
-		log.info("First name: " + firstName);
-		log.info("Last name: " + lastName);
-		log.info("Email: " + randEmail);
-		log.info("Password: " + password);
-		userRegisterPage.registerNewUser(firstName, lastName, randEmail, password, password);
+		log.info("First name '" + firstName + "'");
+		log.info("Last name '" + lastName + "'");
+		log.info("Email '" + email + "'");
+		log.info("Password '" + password + "'");
+		userRegisterPage.registerNewUser(firstName, lastName, email, password, password);
 
 		userLoginPage = userHomePage.openLoginPage();
 
-		userHomePage = userLoginPage.loginAsUser(randEmail, password);
+		userHomePage = userLoginPage.loginAsUser(email, password);
 
 		loggedCookies = userHomePage.getAllCookies(driver);
 

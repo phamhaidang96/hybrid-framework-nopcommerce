@@ -12,24 +12,18 @@ import com.nopcommerce.common.Common_02_Register_New_Account_Cookie;
 import commons.BaseTest;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.user.UserAddressPageObject;
-import pageObjects.nopcommerce.user.UserChangePasswordPageObject;
 import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopcommerce.user.UserHomePageObject;
-import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
 import utilities.DataHelper;
 
-public class Level_07_My_Account extends BaseTest {
+public class Level_19_Faker_Data extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject userHomePage;
 	private UserAddressPageObject userAddress;
 	private UserCustomerInfoPageObject userCustomerInfo;
-	private UserChangePasswordPageObject userChangePassword;
-	private UserMyProductReviewPageObject userMyProductReview;
 	private DataHelper dataFaker;
-	private Common_02_Register_New_Account_Cookie commonAccount;
 	private String firstName, lastName, dateOfBirth, monthOfBirth, yearOfBirth, randEmail, companyName, gender;
 	private String country, state, city, address1, address2, zipCode, phoneNumber;
-	private String oldPassword, newPassword;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -54,9 +48,6 @@ public class Level_07_My_Account extends BaseTest {
 		address2 = dataFaker.getSecondAddress();
 		zipCode = dataFaker.getZipcode();
 		phoneNumber = dataFaker.getPhoneNumber();
-
-		// oldPassword = commonAccount.getPassword();
-		newPassword = dataFaker.getPassword();
 
 		userHomePage.openLoginPage();
 		userHomePage.setCookie(driver, Common_02_Register_New_Account_Cookie.loggedCookies);
@@ -109,7 +100,7 @@ public class Level_07_My_Account extends BaseTest {
 	@Test
 	public void TC_02_Add_Addresses() {
 		log.info("TC_02 - Step 01: Open 'Addresses' page");
-		userAddress = userCustomerInfo.openAddressPage(driver);
+		userAddress = userHomePage.openAddressPage(driver);
 
 		log.info("TC_02 - Step 02: Click button 'Add new'");
 		userAddress.clickToAddNewButton();
@@ -150,7 +141,7 @@ public class Level_07_My_Account extends BaseTest {
 		log.info("TC_02 - Step 14: Click to Save button");
 		userAddress.clickToSaveButton();
 
-		log.info("TC_02 - Step 15: Verify data inputed /n");
+		log.info("TC_02 - Step 15: Verify data inputed");
 		verifyTrue(userAddress.isAddNewAddressSuccessMessageDisplay());
 		verifyEquals(userAddress.isFirstNameAndLastNameDisplayed(), firstName + " " + lastName);
 		verifyTrue(userAddress.isEmailDisplayed(randEmail));
@@ -164,36 +155,19 @@ public class Level_07_My_Account extends BaseTest {
 		verifyTrue(userAddress.isPhoneNumberDisplayed(phoneNumber));
 	}
 
-	// @Test
+	@Test
 	public void TC_03_Change_Password() {
-		log.info("TC_03 - Step 01: Open 'Change Password' page");
-		userChangePassword = userAddress.openChangePasswordPage(driver);
 
-		log.info("TC_03 - Step 02: input to Old Password textbox with value '" + oldPassword + "'");
-		userChangePassword.inputToOldPasswordTextbox(oldPassword);
-
-		log.info("TC_03 - Step 03: input to New Password textbox with value '" + newPassword + "'");
-		userChangePassword.inputToNewPasswordTextbox(newPassword);
-
-		log.info("TC_03 - Step 04: input to Confirm New Password textbox with value '" + newPassword + "'");
-		userChangePassword.inputToConfirmPasswordTextbox(newPassword);
-
-		log.info("TC_03 - Step 05: Click to Change Password button");
-		userChangePassword.clickToChangePasswordButton();
-
-		log.info("TC_03 - Step 06: Verify update Password successfully");
-		verifyTrue(userChangePassword.isChangePasswordSuccessMessageDisplayed());
 	}
 
 	@Test
 	public void TC_04_Add_Reviews() {
-		log.info("TC_03 - Step 01: Open 'My Product Review' page");
-		userMyProductReview = userAddress.openMyProductReviewPage(driver);
 
 	}
 
-	@AfterClass(alwaysRun = true)
+	@AfterClass
 	public void afterClass() {
 		closeBrowserDriver();
 	}
+
 }

@@ -9,4 +9,6 @@ public class BasePageUI {
 	public static final String USER_LOGOUT_LINK = "xpath=//a[@class='ico-logout']";
 	public static final String ADMIN_LOGOUT_LINK = "xpath=//a[text()='Logout']";
 	public static final String ADMIN_BUSY_LOADING = "xpath=//div[@id='ajaxBusy']";
+	public static final String COMPUTERS_LINK = "xpath=//ul[@class='top-menu notmobile']//a[contains(string(),'Computers')]";
+	public static final String COMPUTER_SUBLIST_DYNAMIC_LINK = "xpath=//ul[@class='sublist']//a[contains(string(),'%s')]";
 }

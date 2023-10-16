@@ -17,7 +17,7 @@ import pageObjects.nopcommerce.user.UserLoginPageObject;
 import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
 
-public class Level_07_MyAccount_Apply_Switch_Page extends BaseTest {
+public class Level_07_My_Account_Apply_Switch_Page extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;

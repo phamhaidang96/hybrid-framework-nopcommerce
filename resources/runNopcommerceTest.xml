@@ -19,10 +19,10 @@
   </listeners>
   
   <test name="Run on Chrome">
-	  <parameter name = "browser" value = "chrome"/>
+	  <parameter name = "browser" value = "firefox"/>
     <classes>
-      <class name="com.nopcommerce.common.Common_02_Register_New_Account_Cookie"/>
-      <class name="com.nopcommerce.user.Level_07_My_Account"/>
+<!--      <class name="com.nopcommerce.common.Common_02_Register_New_Account_Cookie"/>-->
+      <class name="com.nopcommerce.user.Level_18_Sort_Data"/>
     </classes>
   </test>
 </suite>

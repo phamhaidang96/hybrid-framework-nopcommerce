@@ -2,11 +2,12 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
-import pageObject.JQuery.HomePageDemoDataGridObject;
 import pageObjects.nopcommerce.admin.AdminLoginPageObject;
 import pageObjects.nopcommerce.user.UserAddressPageObject;
 import pageObjects.nopcommerce.user.UserChangePasswordPageObject;
+import pageObjects.nopcommerce.user.UserComputersProductPageObject;
 import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
+import pageObjects.nopcommerce.user.UserDesktopsProductPageObject;
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserLoginPageObject;
 import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
@@ -43,5 +44,13 @@ public class PageGeneratorManager {
 
 	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
 		return new AdminLoginPageObject(driver);
+	}
+
+	public static UserComputersProductPageObject getUserComputersProductPage(WebDriver driver) {
+		return new UserComputersProductPageObject(driver);
+	}
+
+	public static UserDesktopsProductPageObject getUserDesktopsProductPage(WebDriver driver) {
+		return new UserDesktopsProductPageObject(driver);
 	}
 }

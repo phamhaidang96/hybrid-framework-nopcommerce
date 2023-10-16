@@ -22,6 +22,7 @@ import io.qameta.allure.Step;
 import pageObjects.nopcommerce.admin.AdminLoginPageObject;
 import pageObjects.nopcommerce.user.UserAddressPageObject;
 import pageObjects.nopcommerce.user.UserChangePasswordPageObject;
+import pageObjects.nopcommerce.user.UserComputersProductPageObject;
 import pageObjects.nopcommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopcommerce.user.UserHomePageObject;
 import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
@@ -490,9 +491,15 @@ public class BasePage {
 	}
 
 	public UserMyProductReviewPageObject openMyProductReviewPage(WebDriver driver) {
-		waitForElementUndisplay(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
+		waitForElementVisible(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
 		clickToElement(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
 		return PageGeneratorManager.getUserMyProductReviewPage(driver);
+	}
+
+	public UserComputersProductPageObject openComputerPageObject(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.COMPUTERS_LINK);
+		clickToElement(driver, BasePageUI.COMPUTERS_LINK);
+		return PageGeneratorManager.getUserComputersProductPage(driver);
 	}
 
 	/**
@@ -515,6 +522,17 @@ public class BasePage {
 			return PageGeneratorManager.getUserChangePasswordPage(driver);
 		case "My product reviews":
 			return PageGeneratorManager.getUserMyProductReviewPage(driver);
+		default:
+			throw new RuntimeException("Invalid page name at My Account area");
+		}
+	}
+
+	public BasePage openPagesAtComputersByName(WebDriver driver, String pageNames) {
+		waitForElementVisible(driver, BasePageUI.COMPUTER_SUBLIST_DYNAMIC_LINK, pageNames);
+		clickToElement(driver, BasePageUI.COMPUTER_SUBLIST_DYNAMIC_LINK, pageNames);
+		switch (pageNames) {
+		case "Desktops":
+			return PageGeneratorManager.getUserDesktopsProductPage(driver);
 		default:
 			throw new RuntimeException("Invalid page name at My Account area");
 		}
