@@ -213,17 +213,17 @@ public class Level_18_Sort_Data extends BaseTest {
 		log.info("TC_04 - Step 02: Open 'Desktops' page");
 		userDesktops = (UserDesktopsProductPageObject) userComputers.openPagesAtComputersByName(driver, "Desktops");
 
-		// log.info("TC_04 - Step 03: Select Sort by 'Name: A to Z'");
-		// userDesktops.selectSortByDropdownByOption("Name: A to Z");
-		//
-		// log.info("TC_04 - Step 04: Verify Sort by 'Name: A to Z'");
-		// verifyTrue(userDesktops.isProductSortByNameAscending());
-		//
-		// log.info("TC_04 - Step 05: Select Sort by 'Name: Z to A'");
-		// userDesktops.selectSortByDropdownByOption("Name: Z to A");
-		//
-		// log.info("TC_04 - Step 06: Verify Sort by 'Name: Z to A'");
-		// verifyTrue(userDesktops.isProductSortByNameDescending());
+		log.info("TC_04 - Step 03: Select Sort by 'Name: A to Z'");
+		userDesktops.selectSortByDropdownByOption("Name: A to Z");
+
+		log.info("TC_04 - Step 04: Verify Sort by 'Name: A to Z'");
+		verifyTrue(userDesktops.isProductSortByNameAscending());
+
+		log.info("TC_04 - Step 05: Select Sort by 'Name: Z to A'");
+		userDesktops.selectSortByDropdownByOption("Name: Z to A");
+
+		log.info("TC_04 - Step 06: Verify Sort by 'Name: Z to A'");
+		verifyTrue(userDesktops.isProductSortByNameDescending());
 
 		log.info("TC_04 - Step 07: Select Sort by 'Price: Low to High'");
 		userDesktops.selectSortByDropdownByOption("Price: Low to High");

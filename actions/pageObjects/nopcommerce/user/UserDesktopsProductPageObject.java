@@ -94,16 +94,12 @@ public class UserDesktopsProductPageObject extends BasePage {
 		List<WebElement> productPrices = getListWebElement(driver, UserDesktopPrductPageUI.PRODUCTS_PRICE);
 		for (WebElement productPrice : productPrices) {
 			productUIList.add(Float.parseFloat(productPrice.getText().substring(1).replace(",", "")));
-			System.out.println("Data trên UI: " + productPrice.getText());
 		}
 		ArrayList<Float> sortProductUIList = new ArrayList<Float>();
 		for (Float product : productUIList) {
 			sortProductUIList.add(product);
 		}
 		Collections.sort(sortProductUIList);
-		for (Float product : sortProductUIList) {
-			System.out.println("Data sau khi sort ASC: " + product);
-		}
 		return sortProductUIList.equals(productUIList);
 	}
 
@@ -112,21 +108,14 @@ public class UserDesktopsProductPageObject extends BasePage {
 		waitForElementUndisplay(driver, UserDesktopPrductPageUI.PRODUCT_BUSY_LOADING_ICON);
 		List<WebElement> productPrices = getListWebElement(driver, UserDesktopPrductPageUI.PRODUCTS_PRICE);
 		for (WebElement productPrice : productPrices) {
-			productUIList.add(Float.parseFloat(productPrice.getText().substring(1).replace(",", "")));
-			System.out.println("Data trên UI: " + productPrice.getText());
+			productUIList.add(Float.parseFloat(productPrice.getText().replace("$", "").replace(",", "")));
 		}
 		ArrayList<Float> sortProductUIList = new ArrayList<Float>();
 		for (Float product : productUIList) {
 			sortProductUIList.add(product);
 		}
 		Collections.sort(sortProductUIList);
-		for (Float product : sortProductUIList) {
-			System.out.println("Data sau khi sort ASC: " + product);
-		}
 		Collections.reverse(sortProductUIList);
-		for (Float product : sortProductUIList) {
-			System.out.println("Data sau khi sort DESC: " + product);
-		}
 		return sortProductUIList.equals(productUIList);
 	}
 }

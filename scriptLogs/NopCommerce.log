@@ -2411,3 +2411,154 @@ Driver info: driver.version: RemoteWebDriver
 [2023-10-16 23:03:55,914 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
 [2023-10-16 23:03:55,921 INFO com.nopcommerce.user.Level_18_Sort_Data] - OS name = mac os x
 [2023-10-16 23:03:55,921 INFO com.nopcommerce.user.Level_18_Sort_Data] - Driver instance name = firefoxdriver: firefox on mac (f9480eed-a44c-447f-9d23-34e296f5b223)
+[2023-10-17 15:58:18,729 INFO com.nopcommerce.user.Level_18_Sort_Data] - Pre-condition:
+ Register new user with info: 
+[2023-10-17 15:58:18,730 INFO com.nopcommerce.user.Level_18_Sort_Data] - First name 'Linnie'
+[2023-10-17 15:58:18,730 INFO com.nopcommerce.user.Level_18_Sort_Data] - Last name 'Marquardt'
+[2023-10-17 15:58:18,730 INFO com.nopcommerce.user.Level_18_Sort_Data] - Email 'doreen.pacocha@gmail.com'
+[2023-10-17 15:58:18,730 INFO com.nopcommerce.user.Level_18_Sort_Data] - Password '%#t#6od'
+
+[2023-10-17 15:58:21,113 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 01: Update Gender to 'Male'
+[2023-10-17 15:58:21,344 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 02: Update First name to 'Misti'
+[2023-10-17 15:58:21,406 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 03: Update Last name to 'Mante'
+[2023-10-17 15:58:21,457 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 04: Update Date of birth to '3'
+[2023-10-17 15:58:21,694 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 05: Update Month of birth to 'March'
+[2023-10-17 15:58:21,935 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 06: Update Year of birth to '2022'
+[2023-10-17 15:58:22,186 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 07: Update Email to 'reita.gaylord@hotmail.com'
+[2023-10-17 15:58:22,224 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 08: Update Company name to 'Spencer-Koepp'
+[2023-10-17 15:58:22,255 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 09: Click button 'Save'
+[2023-10-17 15:58:22,806 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 10: Verify data updated
+
+[2023-10-17 15:58:23,209 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 01: Open 'Addresses' page
+[2023-10-17 15:58:23,516 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 02: Click button 'Add new'
+[2023-10-17 15:58:23,981 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 03: Input to First name textbox with value is 'Misti'
+[2023-10-17 15:58:24,021 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 04: Input to Last name textbox with value is 'Mante'
+[2023-10-17 15:58:24,056 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 05: Input to Email textbox with value is 'reita.gaylord@hotmail.com'
+[2023-10-17 15:58:24,089 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 06: Input to Company textbox with value is 'Spencer-Koepp'
+[2023-10-17 15:58:24,115 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 07: Select Country with value is 'United States'
+[2023-10-17 15:58:24,346 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 08: Select State/Province with value is 'Alaska'
+[2023-10-17 15:58:24,614 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 09: Input to City textbox with value is 'North Shirly'
+[2023-10-17 15:58:24,657 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 10: Input to Address1 textbox with value is '4547 Feest Keys, Lake Domonique, ID 83704-9353'
+[2023-10-17 15:58:24,695 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 11: Input to Address2 textbox with value is 'Apt. 195'
+[2023-10-17 15:58:24,725 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 12: Input to Zipcode textbox with value is '69609'
+[2023-10-17 15:58:24,756 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 13: Input to Phone number textbox with value is '380-309-7986 x00027'
+[2023-10-17 15:58:24,787 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 14: Click to Save button
+[2023-10-17 15:58:25,436 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 15: Verify data inputed /n
+[2023-10-17 15:58:25,463 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,478 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,493 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,507 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,521 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,533 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,548 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,563 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,576 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,589 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,603 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:25,606 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 01: Open 'Change Password' page
+[2023-10-17 15:58:25,925 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 02: input to Old Password textbox with value '%#t#6od'
+[2023-10-17 15:58:25,963 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 03: input to New Password textbox with value '^jBL1C%t'
+[2023-10-17 15:58:25,993 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 04: input to Confirm New Password textbox with value '^jBL1C%t'
+[2023-10-17 15:58:26,021 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 05: Click to Change Password button
+[2023-10-17 15:58:26,333 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 06: Verify update Password successfully
+[2023-10-17 15:58:26,369 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:26,372 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 01: Open 'Computers' page
+[2023-10-17 15:58:26,776 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 02: Open 'Desktops' page
+[2023-10-17 15:58:27,142 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 03: Select Sort by 'Name: A to Z'
+[2023-10-17 15:58:27,375 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 04: Verify Sort by 'Name: A to Z'
+[2023-10-17 15:58:27,949 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:27,949 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 05: Select Sort by 'Name: Z to A'
+[2023-10-17 15:58:28,195 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 06: Verify Sort by 'Name: Z to A'
+[2023-10-17 15:58:28,757 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:28,757 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 07: Select Sort by 'Price: Low to High'
+[2023-10-17 15:58:31,997 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 08: Verify Sort by 'Price: Low to High'
+[2023-10-17 15:58:32,044 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:32,044 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 09: Select Sort by 'Price: High to Low'
+[2023-10-17 15:58:32,281 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 10: Verify Sort by 'Price: High to Low'
+[2023-10-17 15:58:32,847 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:32,853 INFO com.nopcommerce.user.Level_18_Sort_Data] - OS name = mac os x
+[2023-10-17 15:58:32,853 INFO com.nopcommerce.user.Level_18_Sort_Data] - Driver instance name = firefoxdriver: firefox on mac (b9fad585-3e53-447c-aa31-5c3206252dfb)
+[2023-10-17 17:20:40,404 INFO com.nopcommerce.user.Level_18_Sort_Data] - OS name = mac os x
+[2023-10-17 17:20:40,405 INFO com.nopcommerce.user.Level_18_Sort_Data] - 
+[2023-10-17 17:20:51,700 INFO com.nopcommerce.user.Level_18_Sort_Data] - Pre-condition:
+ Register new user with info: 
+[2023-10-17 17:20:51,701 INFO com.nopcommerce.user.Level_18_Sort_Data] - First name 'Krysten'
+[2023-10-17 17:20:51,701 INFO com.nopcommerce.user.Level_18_Sort_Data] - Last name 'Murray'
+[2023-10-17 17:20:51,701 INFO com.nopcommerce.user.Level_18_Sort_Data] - Email 'margorie.hermiston@hotmail.com'
+[2023-10-17 17:20:51,701 INFO com.nopcommerce.user.Level_18_Sort_Data] - Password '4!JjSnolw!'
+
+[2023-10-17 17:21:17,142 INFO com.nopcommerce.user.Level_18_Sort_Data] - OS name = mac os x
+[2023-10-17 17:21:17,142 INFO com.nopcommerce.user.Level_18_Sort_Data] - Driver instance name = safaridriver: safari on mac (843b5ad0-b8c3-44d2-8e26-ad1cce837a99)
+[2023-10-17 17:21:17,150 INFO com.nopcommerce.user.Level_18_Sort_Data] - 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MacBook-Pro-cua-Pham.local', ip: 'fe80:0:0:0:10b2:8ed5:ecaa:de81%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '11.0.18'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G115, safari:platformVersion: 12.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 843B5AD0-B8C3-44D2-8E26-AD1CCE837A99
+[2023-10-17 17:23:33,705 INFO com.nopcommerce.user.Level_18_Sort_Data] - Pre-condition:
+ Register new user with info: 
+[2023-10-17 17:23:33,707 INFO com.nopcommerce.user.Level_18_Sort_Data] - First name 'Alba'
+[2023-10-17 17:23:33,707 INFO com.nopcommerce.user.Level_18_Sort_Data] - Last name 'Thompson'
+[2023-10-17 17:23:33,707 INFO com.nopcommerce.user.Level_18_Sort_Data] - Email 'marion.wilderman@yahoo.com'
+[2023-10-17 17:23:33,708 INFO com.nopcommerce.user.Level_18_Sort_Data] - Password 'hgt9VhYO!ZV@'
+
+[2023-10-17 17:23:59,806 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 01: Update Gender to 'Male'
+[2023-10-17 17:24:00,178 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 02: Update First name to 'Kory'
+[2023-10-17 17:24:00,396 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 03: Update Last name to 'Reinger'
+[2023-10-17 17:24:00,597 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 04: Update Date of birth to '3'
+[2023-10-17 17:24:01,087 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 05: Update Month of birth to 'March'
+[2023-10-17 17:24:01,510 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 06: Update Year of birth to '2022'
+[2023-10-17 17:24:01,606 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 07: Update Email to 'ervin.price@gmail.com'
+[2023-10-17 17:24:01,844 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 08: Update Company name to 'Mayer Group'
+[2023-10-17 17:24:02,251 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 09: Click button 'Save'
+[2023-10-17 17:24:04,012 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_01 - Step 10: Verify data updated
+
+[2023-10-17 17:24:06,387 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 01: Open 'Addresses' page
+[2023-10-17 17:24:08,222 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 02: Click button 'Add new'
+[2023-10-17 17:24:09,458 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 03: Input to First name textbox with value is 'Kory'
+[2023-10-17 17:24:09,750 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 04: Input to Last name textbox with value is 'Reinger'
+[2023-10-17 17:24:10,361 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 05: Input to Email textbox with value is 'ervin.price@gmail.com'
+[2023-10-17 17:24:10,504 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 06: Input to Company textbox with value is 'Mayer Group'
+[2023-10-17 17:24:10,704 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 07: Select Country with value is 'United States'
+[2023-10-17 17:24:10,960 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 08: Select State/Province with value is 'Alaska'
+[2023-10-17 17:24:11,720 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 09: Input to City textbox with value is 'Borerton'
+[2023-10-17 17:24:11,874 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 10: Input to Address1 textbox with value is 'Apt. 992 59283 Bernier Road, Jayfurt, NJ 80575-2260'
+[2023-10-17 17:24:12,047 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 11: Input to Address2 textbox with value is 'Suite 967'
+[2023-10-17 17:24:12,304 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 12: Input to Zipcode textbox with value is '55781'
+[2023-10-17 17:24:12,467 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 13: Input to Phone number textbox with value is '678.386.9008'
+[2023-10-17 17:24:12,646 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 14: Click to Save button
+[2023-10-17 17:24:14,135 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_02 - Step 15: Verify data inputed /n
+[2023-10-17 17:24:14,232 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:14,610 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:14,769 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:14,827 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:14,859 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:14,890 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:15,018 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:15,057 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:15,104 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:15,179 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:15,219 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:15,223 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 01: Open 'Change Password' page
+[2023-10-17 17:24:16,143 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 02: input to Old Password textbox with value 'hgt9VhYO!ZV@'
+[2023-10-17 17:24:16,264 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 03: input to New Password textbox with value 'VZYg%4SiC*uD'
+[2023-10-17 17:24:16,435 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 04: input to Confirm New Password textbox with value 'VZYg%4SiC*uD'
+[2023-10-17 17:24:16,564 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 05: Click to Change Password button
+[2023-10-17 17:24:17,425 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_03 - Step 06: Verify update Password successfully
+[2023-10-17 17:24:17,462 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:17,464 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 01: Open 'Computers' page
+[2023-10-17 17:24:20,004 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 02: Open 'Desktops' page
+[2023-10-17 17:24:21,936 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 03: Select Sort by 'Name: A to Z'
+[2023-10-17 17:24:22,180 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 04: Verify Sort by 'Name: A to Z'
+[2023-10-17 17:24:23,185 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:23,185 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 05: Select Sort by 'Name: Z to A'
+[2023-10-17 17:24:23,428 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 06: Verify Sort by 'Name: Z to A'
+[2023-10-17 17:24:24,619 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:24,620 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 07: Select Sort by 'Price: Low to High'
+[2023-10-17 17:24:27,880 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 08: Verify Sort by 'Price: Low to High'
+[2023-10-17 17:24:27,933 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:27,933 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 09: Select Sort by 'Price: High to Low'
+[2023-10-17 17:24:28,237 INFO com.nopcommerce.user.Level_18_Sort_Data] - TC_04 - Step 10: Verify Sort by 'Price: High to Low'
+[2023-10-17 17:24:29,037 INFO com.nopcommerce.user.Level_18_Sort_Data] - ---------------------- Passed -----------------------
+[2023-10-17 17:24:29,041 INFO com.nopcommerce.user.Level_18_Sort_Data] - OS name = mac os x
+[2023-10-17 17:24:29,041 INFO com.nopcommerce.user.Level_18_Sort_Data] - Driver instance name = edgedriver: msedge on mac (b5f03f715419aea1ddfb706005ece5ee)
