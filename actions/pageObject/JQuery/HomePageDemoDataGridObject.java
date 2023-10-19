@@ -6,7 +6,6 @@ import java.util.List;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.server.handler.GetElementSize;
 
 import commons.BasePage;
 import pageUIs.DemoDataGrid.HomePageDemoDataGridUI;
@@ -56,14 +55,18 @@ public class HomePageDemoDataGridObject extends BasePage {
 
 	public void inputToTextboxByColumnNameAtRow(String columnName, String rowNumber, String textInput) {
 		int indexColumn = getElementSize(driver, HomePageDemoDataGridUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
-		waitForElementVisible(driver, HomePageDemoDataGridUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(indexColumn));
-		sendkeyToElement(driver, HomePageDemoDataGridUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, textInput, rowNumber, String.valueOf(indexColumn));
+		waitForElementVisible(driver, HomePageDemoDataGridUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber,
+				String.valueOf(indexColumn));
+		sendkeyToElement(driver, HomePageDemoDataGridUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, textInput, rowNumber,
+				String.valueOf(indexColumn));
 	}
 
 	public void selectToDropDownByColumnNameAtRow(String columnName, String rowNumber, String textSelect) {
 		int indexColumn = getElementSize(driver, HomePageDemoDataGridUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
 
-		waitForElementClickable(driver, HomePageDemoDataGridUI.DROPDOWM_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(indexColumn));
-		selectItemInDefaultDropdown(driver, HomePageDemoDataGridUI.DROPDOWM_BY_COLUMN_INDEX_AND_ROW_INDEX, textSelect, rowNumber, String.valueOf(indexColumn));
+		waitForElementClickable(driver, HomePageDemoDataGridUI.DROPDOWM_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber,
+				String.valueOf(indexColumn));
+		selectItemInDefaultDropdown(driver, HomePageDemoDataGridUI.DROPDOWM_BY_COLUMN_INDEX_AND_ROW_INDEX, textSelect,
+				rowNumber, String.valueOf(indexColumn));
 	}
 }

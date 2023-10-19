@@ -30,6 +30,11 @@ import pageUIs.DemoDataGrid.HomePageUploadFileUI;
 import pageUIs.nopcommerce.user.BasePageUI;
 
 public class BasePage {
+//	private WebDriver driver;
+//
+//	public BasePage(WebDriver driver) {
+//		this.driver = driver;
+//	}
 
 	public static BasePage getBasePageObject() {
 		return new BasePage();
@@ -149,7 +154,8 @@ public class BasePage {
 		} else if (locatorType.startsWith("css=") || (locatorType.startsWith("Css="))) {
 			locatorType = locatorType.substring(4);
 			by = By.cssSelector(locatorType);
-		} else if (locatorType.startsWith("xpath=") || (locatorType.startsWith("XPath=")) || (locatorType.startsWith("Xpath="))) {
+		} else if (locatorType.startsWith("xpath=") || (locatorType.startsWith("XPath="))
+				|| (locatorType.startsWith("Xpath="))) {
 			locatorType = locatorType.substring(6);
 			by = By.xpath(locatorType);
 		}
@@ -161,7 +167,8 @@ public class BasePage {
 	}
 
 	private String getDynamicXpath(String locatorType, String... dynamicValues) {
-		if (locatorType.startsWith("xpath=") || (locatorType.startsWith("XPath=")) || (locatorType.startsWith("Xpath="))) {
+		if (locatorType.startsWith("xpath=") || (locatorType.startsWith("XPath="))
+				|| (locatorType.startsWith("Xpath="))) {
 			locatorType = String.format(locatorType, (Object[]) dynamicValues);
 		}
 		return locatorType;
@@ -196,7 +203,8 @@ public class BasePage {
 		select.selectByVisibleText(textItem);
 	}
 
-	public void selectItemInDefaultDropdown(WebDriver driver, String locatorType, String textItem, String... dynamicValues) {
+	public void selectItemInDefaultDropdown(WebDriver driver, String locatorType, String textItem,
+			String... dynamicValues) {
 		Select select = new Select(getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
 		select.selectByVisibleText(textItem);
 	}
@@ -211,12 +219,14 @@ public class BasePage {
 		return select.isMultiple();
 	}
 
-	public void selectItemInCustomDropdown(WebDriver driver, String parentXpath, String childXpath, String expectedTextItem) {
+	public void selectItemInCustomDropdown(WebDriver driver, String parentXpath, String childXpath,
+			String expectedTextItem) {
 		getWebElement(driver, parentXpath).click();
 		sleepInSecond(1);
 
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
-		List<WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getLocator(childXpath)));
+		List<WebElement> allItems = explicitWait
+				.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getLocator(childXpath)));
 		for (WebElement item : allItems) {
 			if (item.getText().trim().equals(expectedTextItem)) {
 				item.click();
@@ -359,9 +369,11 @@ public class BasePage {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		WebElement element = getWebElement(driver, locatorType);
 		String originalStyle = element.getAttribute("style");
-		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", "border: 2px solid red; border-style: dashed;");
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
+				"border: 2px solid red; border-style: dashed;");
 		sleepInSecond(1);
-		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", originalStyle);
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
+				originalStyle);
 	}
 
 	public void clickToElementByJS(WebDriver driver, String locatorType) {
@@ -376,7 +388,8 @@ public class BasePage {
 
 	public void removeAttributeInDOM(WebDriver driver, String locatorType, String attributeRemove) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getWebElement(driver, locatorType));
+		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');",
+				getWebElement(driver, locatorType));
 	}
 
 	public boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {
@@ -403,12 +416,15 @@ public class BasePage {
 
 	public String getElementValidationMessage(WebDriver driver, String locatorType) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		return (String) jsExecutor.executeScript("return arguments[0].validationMessage;", getWebElement(driver, locatorType));
+		return (String) jsExecutor.executeScript("return arguments[0].validationMessage;",
+				getWebElement(driver, locatorType));
 	}
 
 	public boolean isImageLoaded(WebDriver driver, String locatorType) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver, locatorType));
+		boolean status = (boolean) jsExecutor.executeScript(
+				"return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
+				getWebElement(driver, locatorType));
 		return status;
 	}
 
@@ -419,7 +435,8 @@ public class BasePage {
 
 	public void waitForElementVisible(WebDriver driver, String locatorType, String... dynamicValues) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
-		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getLocator(getDynamicXpath(locatorType, dynamicValues))));
+		explicitWait.until(
+				ExpectedConditions.visibilityOfElementLocated(getLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 
 	public void waitForAllElementVisible(WebDriver driver, String locatorType) {
@@ -434,7 +451,8 @@ public class BasePage {
 
 	public void waitForElementInvisible(WebDriver driver, String locatorType, String... dynamicValues) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
-		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getLocator(getDynamicXpath(locatorType, dynamicValues))));
+		explicitWait.until(ExpectedConditions
+				.invisibilityOfElementLocated(getLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 
 	public void waitForAllElementInvisible(WebDriver driver, String locatorType) {
@@ -456,7 +474,8 @@ public class BasePage {
 
 	public void waitForElementClickable(WebDriver driver, String locatorType, String... dynamicValues) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
-		explicitWait.until(ExpectedConditions.elementToBeClickable(getLocator(getDynamicXpath(locatorType, dynamicValues))));
+		explicitWait.until(
+				ExpectedConditions.elementToBeClickable(getLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 
 	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {

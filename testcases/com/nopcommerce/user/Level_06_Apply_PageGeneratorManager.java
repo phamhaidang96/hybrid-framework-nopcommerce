@@ -82,7 +82,8 @@ public class Level_06_Apply_PageGeneratorManager extends BaseTest {
 		loginPage.clickToLoginButton();
 
 		System.out.println("Login_03 - Step 03: Verify login unsuccessfull message");
-		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfull(), "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
+		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfull(),
+				"Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
 	}
 
 	@Test
@@ -95,7 +96,8 @@ public class Level_06_Apply_PageGeneratorManager extends BaseTest {
 		loginPage.clickToLoginButton();
 
 		System.out.println("Login_04 - Step 03: Verify login unsuccessfull message");
-		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfull(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
+		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfull(),
+				"Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
 	}
 
 	@Test
@@ -109,7 +111,8 @@ public class Level_06_Apply_PageGeneratorManager extends BaseTest {
 		loginPage.clickToLoginButton();
 
 		System.out.println("Login_05 - Step 03: Verify login unsuccessfull message");
-		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfull(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
+		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfull(),
+				"Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
 	}
 
 	@Test

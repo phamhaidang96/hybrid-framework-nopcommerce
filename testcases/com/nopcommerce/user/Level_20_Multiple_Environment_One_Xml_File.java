@@ -20,7 +20,7 @@ import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
 import utilities.DataHelper;
 
-public class Level_18_Sort_Data extends BaseTest {
+public class Level_20_Multiple_Environment_One_Xml_File extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject userHomePage;
 	private UserAddressPageObject userAddress;
@@ -38,10 +38,10 @@ public class Level_18_Sort_Data extends BaseTest {
 	private String country, state, city, address1, address2, zipCode, phoneNumber;
 	private String oldPassword, newPassword;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "environment" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String environmentUrl) {
+		driver = getBrowserDriver(browserName, environmentUrl);
 		dataFaker = DataHelper.getData();
 		userHomePage = PageGeneratorManager.getUserHomePage(driver);
 

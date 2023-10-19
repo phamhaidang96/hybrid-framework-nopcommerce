@@ -41,5 +41,4 @@ public class LoginPageObject extends BasePage {
 		waitForElementClickable(driver, LoginPageUI.CLOSE_ICON);
 		clickToElement(driver, LoginPageUI.CLOSE_ICON);
 	}
-
 }

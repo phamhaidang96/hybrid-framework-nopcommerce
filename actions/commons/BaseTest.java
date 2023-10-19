@@ -33,7 +33,7 @@ public class BaseTest {
 		log = LogFactory.getLog(getClass());
 	}
 
-	protected WebDriver getBrowserDriver(String browserName) {
+	protected WebDriver getBrowserDriver(String browserName, String environmentUrl) {
 		// if (browserName.equals("firefox")) {
 		// System.setProperty("webdriver.gecko.driver", projectPath +
 		// "/browserDrivers/geckodriver");
@@ -74,7 +74,51 @@ public class BaseTest {
 
 		if (browserName.equals("firefox")) {
 			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.BROWSER_LOG_FOLDER + "FirefoxLog.log");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
+					GlobalConstants.BROWSER_LOG_FOLDER + "FirefoxLog.log");
+
+			driver = WebDriverManager.firefoxdriver().create();
+		} else if (browserName.equals("h_firefox")) {
+			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments("--headless");
+			options.addArguments("window-size=1900x1080");
+			driver = new FirefoxDriver(options);
+		} else if (browserName.equals("edge")) {
+			driver = WebDriverManager.edgedriver().create();
+		} else if (browserName.equals("chrome")) {
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
+
+			driver = WebDriverManager.chromedriver().create();
+		} else if (browserName.equals("h_chrome")) {
+			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			options.addArguments("window-size=1900x1080");
+			driver = new ChromeDriver(options);
+		} else if (browserName.equals("coccoc")) {
+			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver114");
+			ChromeOptions options = new ChromeOptions();
+			options.setBinary("/Applications/CocCoc.app/Contents/MacOS/CocCoc");
+			driver = new ChromeDriver(options);
+		} else if (browserName.equals("safari")) {
+			driver = new SafariDriver();
+		} else {
+			throw new RuntimeException("Browser name is not valid.");
+		}
+
+		driver.get(environmentUrl);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		return driver;
+	}
+
+	protected WebDriver getBrowserDriver(String browserName) {
+		if (browserName.equals("firefox")) {
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
+					GlobalConstants.BROWSER_LOG_FOLDER + "FirefoxLog.log");
 
 			driver = WebDriverManager.firefoxdriver().create();
 		} else if (browserName.equals("h_firefox")) {
@@ -111,6 +155,28 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		return driver;
+	}
+
+	protected String getEnvironmentUrl(String environmentName) {
+		String envUrl = null;
+		EnvironmentList environment = EnvironmentList.valueOf(environmentName.toUpperCase());
+		switch (environment) {
+		case STAGING_USER:
+			envUrl = GlobalConstants.USER_PAGE_URL;
+			break;
+		case STAGING_ADMIN:
+			envUrl = GlobalConstants.ADMIN_PAGE_URL;
+			break;
+		case DEV:
+			envUrl = "";
+			break;
+		case PROD:
+			envUrl = "";
+			break;
+		default:
+			return envUrl = null;
+		}
+		return envUrl;
 	}
 
 	protected int randomNumber() {

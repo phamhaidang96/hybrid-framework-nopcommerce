@@ -3,10 +3,8 @@ package com.nopcommerce.user;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -16,6 +14,7 @@ import org.testng.annotations.Test;
 import commons.BasePage;
 
 public class Level_02_Register_Apply_BasePage_3 extends BasePage {
+
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String randEmail;
@@ -98,7 +97,8 @@ public class Level_02_Register_Apply_BasePage_3 extends BasePage {
 		waitForElementClickable(driver, "//button[@id='register-button']");
 		clickToElement(driver, "//button[@id='register-button']");
 
-		Assert.assertEquals(getElementText(driver, "//div[contains(@class,'message-error')]//li"), "The specified email already exists");
+		Assert.assertEquals(getElementText(driver, "//div[contains(@class,'message-error')]//li"),
+				"The specified email already exists");
 	}
 
 	@Test
@@ -114,7 +114,8 @@ public class Level_02_Register_Apply_BasePage_3 extends BasePage {
 		waitForElementClickable(driver, "//button[@id='register-button']");
 		clickToElement(driver, "//button[@id='register-button']");
 
-		Assert.assertEquals(getElementText(driver, "//span[@id='Password-error']"), "Password must meet the following rules:\nmust have at least 6 characters");
+		Assert.assertEquals(getElementText(driver, "//span[@id='Password-error']"),
+				"Password must meet the following rules:\nmust have at least 6 characters");
 
 	}
 
@@ -132,7 +133,8 @@ public class Level_02_Register_Apply_BasePage_3 extends BasePage {
 		waitForElementClickable(driver, "//button[@id='register-button']");
 		clickToElement(driver, "//button[@id='register-button']");
 
-		Assert.assertEquals(getElementText(driver, "//span[@id='ConfirmPassword-error']"), "The password and confirmation password do not match.");
+		Assert.assertEquals(getElementText(driver, "//span[@id='ConfirmPassword-error']"),
+				"The password and confirmation password do not match.");
 	}
 
 	public int randomNumber() {

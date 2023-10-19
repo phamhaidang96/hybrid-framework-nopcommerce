@@ -1,5 +1,6 @@
 package com.nopcommerce.user;
 
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -19,8 +20,9 @@ import pageObjects.nopcommerce.user.UserLoginPageObject;
 import pageObjects.nopcommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopcommerce.user.UserRegisterPageObject;
 import utilities.DataHelper;
+import utilities.Environment;
 
-public class Level_18_Sort_Data extends BaseTest {
+public class Level_21_Multiple_Environment_Owner extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject userHomePage;
 	private UserAddressPageObject userAddress;
@@ -31,6 +33,7 @@ public class Level_18_Sort_Data extends BaseTest {
 	private UserMyProductReviewPageObject userMyProductReview;
 	private UserComputersProductPageObject userComputers;
 	private UserDesktopsProductPageObject userDesktops;
+	private Environment environment;
 	private DataHelper dataFaker;
 	private String firstName, lastName, email, password;
 	private String updateFirstName, updateLastName, updateDateOfBirth, updateMonthOfBirth, updateYearOfBirth,
@@ -38,10 +41,13 @@ public class Level_18_Sort_Data extends BaseTest {
 	private String country, state, city, address1, address2, zipCode, phoneNumber;
 	private String oldPassword, newPassword;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "environment" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String environmentUrl) {
+		ConfigFactory.setProperty("evn", environmentUrl);
+		environment = ConfigFactory.create(Environment.class);
+
+		driver = getBrowserDriver(browserName, environment.url());
 		dataFaker = DataHelper.getData();
 		userHomePage = PageGeneratorManager.getUserHomePage(driver);
 
