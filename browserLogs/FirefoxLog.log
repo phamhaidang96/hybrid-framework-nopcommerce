@@ -1,27 +1,28 @@
-1697533094079	geckodriver	INFO	Listening on 127.0.0.1:48731
-1697533094154	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1s/th7lqssx53n38hy4dzkkjpvw0000gp/T/rust_mozprofilekMeKyt"
+1698833047181	geckodriver	INFO	Listening on 127.0.0.1:1244
+1698833047189	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... e-geolocation" "-foreground" "-no-remote" "-profile" "/var/folders/1s/th7lqssx53n38hy4dzkkjpvw0000gp/T/rust_mozprofile9OYzUE"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1697533094581	Marionette	INFO	Marionette enabled
-1697533094720	Marionette	INFO	Listening on port 53395
-2023-10-17 15:58:14.765 plugin-container[93582:3269071] nil host used in call to allowsSpecificHTTPSCertificateForHost
-2023-10-17 15:58:14.765 plugin-container[93582:3269071] nil host used in call to allowsAnyHTTPSCertificateForHost:
-Read port: 53395
-2023-10-17 15:58:14.847 plugin-container[93582:3269071] nil host used in call to allowsSpecificHTTPSCertificateForHost
-2023-10-17 15:58:14.847 plugin-container[93582:3269071] nil host used in call to allowsAnyHTTPSCertificateForHost:
-2023-10-17 15:58:14.847 plugin-container[93582:3269069] nil host used in call to allowsSpecificHTTPSCertificateForHost
-2023-10-17 15:58:14.847 plugin-container[93582:3269069] nil host used in call to allowsAnyHTTPSCertificateForHost:
-1697533094877	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1698833047425	Marionette	INFO	Marionette enabled
+2023-11-01 17:04:07.503 plugin-container[19881:519012] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-11-01 17:04:07.503 plugin-container[19881:519012] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-11-01 17:04:07.504 plugin-container[19881:519012] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-11-01 17:04:07.504 plugin-container[19881:519012] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-11-01 17:04:07.505 plugin-container[19881:519022] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-11-01 17:04:07.505 plugin-container[19881:519022] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.error: "Warning: unrecognized command line flag" "-disable-notifications"
+1698833047580	Marionette	INFO	Listening on port 54961
+Read port: 54961
+1698833047691	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
-2023-10-17 08:58:15.786 plugin-container[93586:3269317] nil host used in call to allowsSpecificHTTPSCertificateForHost
-2023-10-17 08:58:15.786 plugin-container[93586:3269317] nil host used in call to allowsAnyHTTPSCertificateForHost:
-2023-10-17 08:58:15.788 plugin-container[93586:3269317] nil host used in call to allowsSpecificHTTPSCertificateForHost
-2023-10-17 08:58:15.788 plugin-container[93586:3269317] nil host used in call to allowsAnyHTTPSCertificateForHost:
-2023-10-17 08:58:15.788 plugin-container[93586:3269318] nil host used in call to allowsSpecificHTTPSCertificateForHost
-2023-10-17 08:58:15.788 plugin-container[93586:3269318] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-11-01 10:04:08.509 plugin-container[19886:519198] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-11-01 10:04:08.509 plugin-container[19886:519198] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-11-01 10:04:08.510 plugin-container[19886:519198] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-11-01 10:04:08.510 plugin-container[19886:519198] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-11-01 10:04:08.511 plugin-container[19886:519201] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-11-01 10:04:08.511 plugin-container[19886:519201] nil host used in call to allowsAnyHTTPSCertificateForHost:
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
-1697533112859	Marionette	INFO	Stopped listening on port 53395
+1698833064048	Marionette	INFO	Stopped listening on port 54961
 JavaScript warning: https://demo.nopcommerce.com/js/ah88wkmhn5k-k51ur8rjog.scripts.js?v=xIfU6JMy2E51dbMkS1yJ9OEu6uo, line 2: Script terminated by timeout at:
 ur@https://demo.nopcommerce.com/js/ah88wkmhn5k-k51ur8rjog.scripts.js?v=xIfU6JMy2E51dbMkS1yJ9OEu6uo:2:8049
 

@@ -389,3 +389,503 @@ Driver info: driver.version: RemoteWebDriver
 [2023-10-19 23:50:02,615 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = chromedriver: chrome on mac (84b7c1a90d52d6f16f3e2b27a5a9a890)
 [2023-10-19 23:50:44,925 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
 [2023-10-19 23:50:44,926 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = chromedriver: chrome on mac (34058bb39b9bbf1372f6736c7134633d)
+[2023-10-23 21:22:14,008 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-10-23 21:22:14,009 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 16:56:11,238 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 16:56:11,238 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = chromedriver: chrome on mac (c17e410c635387e24b8e5b06be5aee9e)
+[2023-11-01 16:58:24,693 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 16:58:24,694 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = chromedriver: chrome on mac (d86df32263c435bbcc2c0dc5a8151da4)
+[2023-11-01 17:01:26,044 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Pre-condition:
+ Register new user with info: 
+[2023-11-01 17:01:26,045 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - First name 'Tobias'
+[2023-11-01 17:01:26,045 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Last name 'McGlynn'
+[2023-11-01 17:01:26,045 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Email 'chauncey.rau@yahoo.com'
+[2023-11-01 17:01:26,045 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Password '63xRMjL8'
+
+[2023-11-01 17:01:28,889 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 01: Update Gender to 'Male'
+[2023-11-01 17:01:28,930 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 02: Update First name to 'Maria'
+[2023-11-01 17:01:28,981 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 03: Update Last name to 'Kessler'
+[2023-11-01 17:01:29,030 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 04: Update Date of birth to '3'
+[2023-11-01 17:01:29,081 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 05: Update Month of birth to 'March'
+[2023-11-01 17:01:29,125 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 06: Update Year of birth to '2022'
+[2023-11-01 17:01:29,170 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 07: Update Email to 'shirley.schulist@yahoo.com'
+[2023-11-01 17:01:29,223 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 08: Update Company name to 'Spencer, Lind and Morissette'
+[2023-11-01 17:01:29,277 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 09: Click button 'Save'
+[2023-11-01 17:01:30,039 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 10: Verify data updated
+
+[2023-11-01 17:01:30,604 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 01: Open 'Addresses' page
+[2023-11-01 17:01:31,412 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 02: Click button 'Add new'
+[2023-11-01 17:01:31,887 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 03: Input to First name textbox with value is 'Maria'
+[2023-11-01 17:01:31,945 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 04: Input to Last name textbox with value is 'Kessler'
+[2023-11-01 17:01:32,000 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 05: Input to Email textbox with value is 'shirley.schulist@yahoo.com'
+[2023-11-01 17:01:32,052 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 06: Input to Company textbox with value is 'Spencer, Lind and Morissette'
+[2023-11-01 17:01:32,105 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 07: Select Country with value is 'United States'
+[2023-11-01 17:01:32,148 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 08: Select State/Province with value is 'Alaska'
+[2023-11-01 17:01:32,763 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 09: Input to City textbox with value is 'Lake Cheryle'
+[2023-11-01 17:01:32,817 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 10: Input to Address1 textbox with value is '27976 Margart Passage, Ortizberg, GA 43157-5456'
+[2023-11-01 17:01:32,876 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 11: Input to Address2 textbox with value is 'Suite 473'
+[2023-11-01 17:01:32,923 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 12: Input to Zipcode textbox with value is '45798-9847'
+[2023-11-01 17:01:32,974 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 13: Input to Phone number textbox with value is '393.609.0887 x91776'
+[2023-11-01 17:01:33,023 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 14: Click to Save button
+[2023-11-01 17:01:34,411 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 15: Verify data inputed /n
+[2023-11-01 17:01:34,436 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,458 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,480 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,501 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,523 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,545 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,566 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,589 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,610 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,630 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,651 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:34,655 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 01: Open 'Change Password' page
+[2023-11-01 17:01:34,959 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 02: input to Old Password textbox with value '63xRMjL8'
+[2023-11-01 17:01:35,009 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 03: input to New Password textbox with value '4$#suhYTOE'
+[2023-11-01 17:01:35,058 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 04: input to Confirm New Password textbox with value '4$#suhYTOE'
+[2023-11-01 17:01:35,107 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 05: Click to Change Password button
+[2023-11-01 17:01:35,434 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 06: Verify update Password successfully
+[2023-11-01 17:01:35,469 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:35,496 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 01: Open 'Computers' page
+[2023-11-01 17:01:35,977 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 02: Open 'Desktops' page
+[2023-11-01 17:01:36,375 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 03: Select Sort by 'Name: A to Z'
+[2023-11-01 17:01:36,430 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 04: Verify Sort by 'Name: A to Z'
+[2023-11-01 17:01:37,001 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:37,001 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 05: Select Sort by 'Name: Z to A'
+[2023-11-01 17:01:37,045 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 06: Verify Sort by 'Name: Z to A'
+[2023-11-01 17:01:37,615 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:37,615 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 07: Select Sort by 'Price: Low to High'
+[2023-11-01 17:01:37,656 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 08: Verify Sort by 'Price: Low to High'
+[2023-11-01 17:01:38,211 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:38,211 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 09: Select Sort by 'Price: High to Low'
+[2023-11-01 17:01:38,251 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 10: Verify Sort by 'Price: High to Low'
+[2023-11-01 17:01:38,823 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:01:38,825 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:01:38,825 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = chromedriver: chrome on mac (d5683b26900b06d10059864d6be3c1fa)
+[2023-11-01 17:02:50,995 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Pre-condition:
+ Register new user with info: 
+[2023-11-01 17:02:50,995 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - First name 'Brenton'
+[2023-11-01 17:02:50,995 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Last name 'Schumm'
+[2023-11-01 17:02:50,995 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Email 'huong.robel@gmail.com'
+[2023-11-01 17:02:50,995 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Password '*NCQoH'
+
+[2023-11-01 17:02:54,089 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 01: Update Gender to 'Male'
+[2023-11-01 17:02:54,137 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 02: Update First name to 'Kindra'
+[2023-11-01 17:02:54,241 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 03: Update Last name to 'Bergstrom'
+[2023-11-01 17:02:54,324 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 04: Update Date of birth to '3'
+[2023-11-01 17:02:54,383 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 05: Update Month of birth to 'March'
+[2023-11-01 17:02:54,438 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 06: Update Year of birth to '2022'
+[2023-11-01 17:02:54,482 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 07: Update Email to 'danielle.christiansen@yahoo.com'
+[2023-11-01 17:02:54,570 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 08: Update Company name to 'Carter, Kris and Kris'
+[2023-11-01 17:02:54,632 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 09: Click button 'Save'
+[2023-11-01 17:02:55,349 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 10: Verify data updated
+
+[2023-11-01 17:02:55,952 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 01: Open 'Addresses' page
+[2023-11-01 17:02:56,884 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 02: Click button 'Add new'
+[2023-11-01 17:02:57,296 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 03: Input to First name textbox with value is 'Kindra'
+[2023-11-01 17:02:57,370 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 04: Input to Last name textbox with value is 'Bergstrom'
+[2023-11-01 17:02:57,428 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 05: Input to Email textbox with value is 'danielle.christiansen@yahoo.com'
+[2023-11-01 17:02:57,488 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 06: Input to Company textbox with value is 'Carter, Kris and Kris'
+[2023-11-01 17:02:57,553 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 07: Select Country with value is 'United States'
+[2023-11-01 17:02:57,611 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 08: Select State/Province with value is 'Alaska'
+[2023-11-01 17:02:58,222 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 09: Input to City textbox with value is 'Krajcikview'
+[2023-11-01 17:02:58,300 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 10: Input to Address1 textbox with value is 'Apt. 691 1920 Tonia Greens, Port Bernard, CO 41451'
+[2023-11-01 17:02:58,365 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 11: Input to Address2 textbox with value is 'Apt. 622'
+[2023-11-01 17:02:58,417 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 12: Input to Zipcode textbox with value is '63934'
+[2023-11-01 17:02:58,479 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 13: Input to Phone number textbox with value is '725-219-8018 x806'
+[2023-11-01 17:02:58,534 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 14: Click to Save button
+[2023-11-01 17:02:59,178 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 15: Verify data inputed /n
+[2023-11-01 17:02:59,205 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,228 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,250 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,273 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,293 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,316 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,341 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,363 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,385 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,404 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,427 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:02:59,431 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 01: Open 'Change Password' page
+[2023-11-01 17:02:59,837 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 02: input to Old Password textbox with value '*NCQoH'
+[2023-11-01 17:02:59,908 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 03: input to New Password textbox with value 'NUKu2Ngw*'
+[2023-11-01 17:02:59,972 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 04: input to Confirm New Password textbox with value 'NUKu2Ngw*'
+[2023-11-01 17:03:00,026 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 05: Click to Change Password button
+[2023-11-01 17:03:00,416 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 06: Verify update Password successfully
+[2023-11-01 17:03:00,449 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:03:00,461 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 01: Open 'Computers' page
+[2023-11-01 17:03:01,020 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 02: Open 'Desktops' page
+[2023-11-01 17:03:01,616 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 03: Select Sort by 'Name: A to Z'
+[2023-11-01 17:03:01,672 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 04: Verify Sort by 'Name: A to Z'
+[2023-11-01 17:03:02,260 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:03:02,260 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 05: Select Sort by 'Name: Z to A'
+[2023-11-01 17:03:02,312 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 06: Verify Sort by 'Name: Z to A'
+[2023-11-01 17:03:03,418 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:03:03,426 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 07: Select Sort by 'Price: Low to High'
+[2023-11-01 17:03:03,471 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 08: Verify Sort by 'Price: Low to High'
+[2023-11-01 17:03:04,060 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:03:04,062 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 09: Select Sort by 'Price: High to Low'
+[2023-11-01 17:03:04,114 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 10: Verify Sort by 'Price: High to Low'
+[2023-11-01 17:03:04,697 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:03:04,700 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:03:04,700 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = chromedriver: chrome on mac (26c5cb02c785b2120ed0274c92f1ba63)
+[2023-11-01 17:03:35,480 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:03:35,480 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 17:04:11,415 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Pre-condition:
+ Register new user with info: 
+[2023-11-01 17:04:11,416 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - First name 'Celeste'
+[2023-11-01 17:04:11,416 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Last name 'Stroman'
+[2023-11-01 17:04:11,416 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Email 'jarrett.kassulke@gmail.com'
+[2023-11-01 17:04:11,416 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Password 'c3$6@dKg0#'
+
+[2023-11-01 17:04:14,117 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 01: Update Gender to 'Male'
+[2023-11-01 17:04:14,341 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 02: Update First name to 'Ma'
+[2023-11-01 17:04:14,384 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 03: Update Last name to 'Schamberger'
+[2023-11-01 17:04:14,425 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 04: Update Date of birth to '3'
+[2023-11-01 17:04:14,661 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 05: Update Month of birth to 'March'
+[2023-11-01 17:04:14,910 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 06: Update Year of birth to '2022'
+[2023-11-01 17:04:15,162 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 07: Update Email to 'manuel.lehner@yahoo.com'
+[2023-11-01 17:04:15,220 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 08: Update Company name to 'DuBuque, Kutch and Lakin'
+[2023-11-01 17:04:15,256 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 09: Click button 'Save'
+[2023-11-01 17:04:15,830 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 10: Verify data updated
+
+[2023-11-01 17:04:16,673 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 01: Open 'Addresses' page
+[2023-11-01 17:04:16,988 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 02: Click button 'Add new'
+[2023-11-01 17:04:17,373 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 03: Input to First name textbox with value is 'Ma'
+[2023-11-01 17:04:17,419 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 04: Input to Last name textbox with value is 'Schamberger'
+[2023-11-01 17:04:17,452 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 05: Input to Email textbox with value is 'manuel.lehner@yahoo.com'
+[2023-11-01 17:04:17,483 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 06: Input to Company textbox with value is 'DuBuque, Kutch and Lakin'
+[2023-11-01 17:04:17,566 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 07: Select Country with value is 'United States'
+[2023-11-01 17:04:17,800 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 08: Select State/Province with value is 'Alaska'
+[2023-11-01 17:04:18,062 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 09: Input to City textbox with value is 'Winonafurt'
+[2023-11-01 17:04:18,098 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 10: Input to Address1 textbox with value is '87891 Elisha Branch, South Breanne, CT 15570'
+[2023-11-01 17:04:18,133 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 11: Input to Address2 textbox with value is 'Suite 542'
+[2023-11-01 17:04:18,171 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 12: Input to Zipcode textbox with value is '67221'
+[2023-11-01 17:04:18,199 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 13: Input to Phone number textbox with value is '944.243.4737 x1279'
+[2023-11-01 17:04:18,233 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 14: Click to Save button
+[2023-11-01 17:04:18,905 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 15: Verify data inputed /n
+[2023-11-01 17:04:18,931 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:18,947 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:18,962 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:18,976 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:18,991 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:19,011 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:19,028 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:19,050 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:19,070 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:19,085 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:19,100 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:19,104 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 01: Open 'Change Password' page
+[2023-11-01 17:04:19,441 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 02: input to Old Password textbox with value 'c3$6@dKg0#'
+[2023-11-01 17:04:19,484 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 03: input to New Password textbox with value '%4^CU@j'
+[2023-11-01 17:04:19,514 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 04: input to Confirm New Password textbox with value '%4^CU@j'
+[2023-11-01 17:04:19,545 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 05: Click to Change Password button
+[2023-11-01 17:04:19,898 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 06: Verify update Password successfully
+[2023-11-01 17:04:19,937 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:19,939 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 01: Open 'Computers' page
+[2023-11-01 17:04:20,406 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 02: Open 'Desktops' page
+[2023-11-01 17:04:20,787 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 03: Select Sort by 'Name: A to Z'
+[2023-11-01 17:04:21,025 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 04: Verify Sort by 'Name: A to Z'
+[2023-11-01 17:04:21,588 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:21,588 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 05: Select Sort by 'Name: Z to A'
+[2023-11-01 17:04:21,834 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 06: Verify Sort by 'Name: Z to A'
+[2023-11-01 17:04:22,407 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:22,408 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 07: Select Sort by 'Price: Low to High'
+[2023-11-01 17:04:22,649 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 08: Verify Sort by 'Price: Low to High'
+[2023-11-01 17:04:23,215 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:23,216 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 09: Select Sort by 'Price: High to Low'
+[2023-11-01 17:04:23,458 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 10: Verify Sort by 'Price: High to Low'
+[2023-11-01 17:04:24,031 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:04:24,042 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:04:24,042 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = firefoxdriver: firefox on mac (71847504-58f0-423f-ab25-6b9b35e2d333)
+[2023-11-01 17:05:02,440 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:05:02,441 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 17:05:33,617 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Pre-condition:
+ Register new user with info: 
+[2023-11-01 17:05:33,617 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - First name 'Kiesha'
+[2023-11-01 17:05:33,618 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Last name 'Jakubowski'
+[2023-11-01 17:05:33,618 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Email 'allen.okeefe@yahoo.com'
+[2023-11-01 17:05:33,618 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Password 'VdUZlP1!n#'
+
+[2023-11-01 17:05:37,022 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 01: Update Gender to 'Male'
+[2023-11-01 17:05:37,068 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 02: Update First name to 'Thurman'
+[2023-11-01 17:05:37,171 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 03: Update Last name to 'Fay'
+[2023-11-01 17:05:37,261 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 04: Update Date of birth to '3'
+[2023-11-01 17:05:37,330 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 05: Update Month of birth to 'March'
+[2023-11-01 17:05:37,374 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 06: Update Year of birth to '2022'
+[2023-11-01 17:05:37,438 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 07: Update Email to 'kent.leuschke@hotmail.com'
+[2023-11-01 17:05:37,528 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 08: Update Company name to 'Gottlieb, Heidenreich and Schowalter'
+[2023-11-01 17:05:37,591 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 09: Click button 'Save'
+[2023-11-01 17:05:38,165 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 10: Verify data updated
+
+[2023-11-01 17:05:38,731 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 01: Open 'Addresses' page
+[2023-11-01 17:05:39,059 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 02: Click button 'Add new'
+[2023-11-01 17:05:39,443 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 03: Input to First name textbox with value is 'Thurman'
+[2023-11-01 17:05:39,515 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 04: Input to Last name textbox with value is 'Fay'
+[2023-11-01 17:05:39,568 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 05: Input to Email textbox with value is 'kent.leuschke@hotmail.com'
+[2023-11-01 17:05:39,631 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 06: Input to Company textbox with value is 'Gottlieb, Heidenreich and Schowalter'
+[2023-11-01 17:05:39,699 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 07: Select Country with value is 'United States'
+[2023-11-01 17:05:39,758 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 08: Select State/Province with value is 'Alaska'
+[2023-11-01 17:05:40,343 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 09: Input to City textbox with value is 'Morissettechester'
+[2023-11-01 17:05:40,413 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 10: Input to Address1 textbox with value is '690 Kreiger Walks, Maximastad, TN 23975-8124'
+[2023-11-01 17:05:40,471 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 11: Input to Address2 textbox with value is 'Apt. 124'
+[2023-11-01 17:05:40,524 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 12: Input to Zipcode textbox with value is '24578'
+[2023-11-01 17:05:40,585 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 13: Input to Phone number textbox with value is '145-271-9332 x79177'
+[2023-11-01 17:05:40,646 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 14: Click to Save button
+[2023-11-01 17:05:41,340 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 15: Verify data inputed /n
+[2023-11-01 17:05:41,369 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,410 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,433 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,455 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,482 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,519 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,539 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,569 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,590 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,609 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,631 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:41,634 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 01: Open 'Change Password' page
+[2023-11-01 17:05:42,875 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 02: input to Old Password textbox with value 'VdUZlP1!n#'
+[2023-11-01 17:05:42,940 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 03: input to New Password textbox with value 'AUbBa5Dda'
+[2023-11-01 17:05:42,993 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 04: input to Confirm New Password textbox with value 'AUbBa5Dda'
+[2023-11-01 17:05:43,042 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 05: Click to Change Password button
+[2023-11-01 17:05:43,385 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 06: Verify update Password successfully
+[2023-11-01 17:05:43,414 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:43,418 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 01: Open 'Computers' page
+[2023-11-01 17:05:43,860 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 02: Open 'Desktops' page
+[2023-11-01 17:05:44,247 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 03: Select Sort by 'Name: A to Z'
+[2023-11-01 17:05:44,300 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 04: Verify Sort by 'Name: A to Z'
+[2023-11-01 17:05:44,891 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:44,891 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 05: Select Sort by 'Name: Z to A'
+[2023-11-01 17:05:44,941 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 06: Verify Sort by 'Name: Z to A'
+[2023-11-01 17:05:45,526 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:45,526 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 07: Select Sort by 'Price: Low to High'
+[2023-11-01 17:05:45,572 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 08: Verify Sort by 'Price: Low to High'
+[2023-11-01 17:05:46,146 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:46,158 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 09: Select Sort by 'Price: High to Low'
+[2023-11-01 17:05:46,211 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 10: Verify Sort by 'Price: High to Low'
+[2023-11-01 17:05:46,777 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:05:46,779 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:05:46,779 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = chromedriver: chrome on mac (5b18981800ba0a4fd9960639fafd05f7)
+[2023-11-01 17:09:25,703 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Pre-condition:
+ Register new user with info: 
+[2023-11-01 17:09:25,704 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - First name 'Monnie'
+[2023-11-01 17:09:25,704 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Last name 'Bradtke'
+[2023-11-01 17:09:25,704 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Email 'alfreda.smitham@yahoo.com'
+[2023-11-01 17:09:25,704 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Password '&biw3X8'
+
+[2023-11-01 17:11:06,558 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Pre-condition:
+ Register new user with info: 
+[2023-11-01 17:11:06,559 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - First name 'Linsey'
+[2023-11-01 17:11:06,559 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Last name 'Jacobs'
+[2023-11-01 17:11:06,559 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Email 'stefan.herzog@hotmail.com'
+[2023-11-01 17:11:06,559 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Password 'pSd4afAUb%%'
+
+[2023-11-01 17:11:09,879 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 01: Update Gender to 'Male'
+[2023-11-01 17:11:09,926 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 02: Update First name to 'Kelley'
+[2023-11-01 17:11:10,029 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 03: Update Last name to 'Toy'
+[2023-11-01 17:11:10,109 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 04: Update Date of birth to '3'
+[2023-11-01 17:11:10,174 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 05: Update Month of birth to 'March'
+[2023-11-01 17:11:10,218 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 06: Update Year of birth to '2022'
+[2023-11-01 17:11:10,267 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 07: Update Email to 'cameron.nader@hotmail.com'
+[2023-11-01 17:11:10,342 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 08: Update Company name to 'Fritsch, Zieme and Tremblay'
+[2023-11-01 17:11:10,407 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 09: Click button 'Save'
+[2023-11-01 17:11:11,152 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 10: Verify data updated
+
+[2023-11-01 17:11:11,728 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 01: Open 'Addresses' page
+[2023-11-01 17:11:12,197 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 02: Click button 'Add new'
+[2023-11-01 17:11:12,607 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 03: Input to First name textbox with value is 'Kelley'
+[2023-11-01 17:11:12,675 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 04: Input to Last name textbox with value is 'Toy'
+[2023-11-01 17:11:12,737 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 05: Input to Email textbox with value is 'cameron.nader@hotmail.com'
+[2023-11-01 17:11:12,795 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 06: Input to Company textbox with value is 'Fritsch, Zieme and Tremblay'
+[2023-11-01 17:11:12,863 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 07: Select Country with value is 'United States'
+[2023-11-01 17:11:12,918 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 08: Select State/Province with value is 'Alaska'
+[2023-11-01 17:11:13,529 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 09: Input to City textbox with value is 'North Gerardoborough'
+[2023-11-01 17:11:13,602 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 10: Input to Address1 textbox with value is '38944 Willms Grove, Port Whitney, RI 85870-9597'
+[2023-11-01 17:11:13,664 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 11: Input to Address2 textbox with value is 'Suite 093'
+[2023-11-01 17:11:13,714 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 12: Input to Zipcode textbox with value is '96135-3233'
+[2023-11-01 17:11:13,772 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 13: Input to Phone number textbox with value is '069-638-5665 x03191'
+[2023-11-01 17:11:13,825 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 14: Click to Save button
+[2023-11-01 17:11:14,688 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 15: Verify data inputed /n
+[2023-11-01 17:11:14,718 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,742 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,765 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,786 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,808 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,830 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,850 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,871 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,894 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,913 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,935 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:14,939 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 01: Open 'Change Password' page
+[2023-11-01 17:11:15,271 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 02: input to Old Password textbox with value 'pSd4afAUb%%'
+[2023-11-01 17:11:15,336 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 03: input to New Password textbox with value 'r1k%5H4n5cdO6'
+[2023-11-01 17:11:15,388 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 04: input to Confirm New Password textbox with value 'r1k%5H4n5cdO6'
+[2023-11-01 17:11:15,438 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 05: Click to Change Password button
+[2023-11-01 17:11:15,799 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 06: Verify update Password successfully
+[2023-11-01 17:11:15,828 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:15,830 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 01: Open 'Computers' page
+[2023-11-01 17:11:16,468 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 02: Open 'Desktops' page
+[2023-11-01 17:11:16,948 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 03: Select Sort by 'Name: A to Z'
+[2023-11-01 17:11:17,000 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 04: Verify Sort by 'Name: A to Z'
+[2023-11-01 17:11:17,592 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:17,592 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 05: Select Sort by 'Name: Z to A'
+[2023-11-01 17:11:17,643 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 06: Verify Sort by 'Name: Z to A'
+[2023-11-01 17:11:18,228 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:18,228 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 07: Select Sort by 'Price: Low to High'
+[2023-11-01 17:11:18,276 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 08: Verify Sort by 'Price: Low to High'
+[2023-11-01 17:11:18,857 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:18,860 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 09: Select Sort by 'Price: High to Low'
+[2023-11-01 17:11:18,914 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 10: Verify Sort by 'Price: High to Low'
+[2023-11-01 17:11:19,502 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:11:19,504 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:11:19,504 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = chromedriver: chrome on mac (9a716943a0221dc4314a6da77ffd3790)
+[2023-11-01 17:11:39,248 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:11:39,249 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 17:14:05,199 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:14:05,199 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 17:15:33,749 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:15:33,750 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 17:15:46,145 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:15:46,146 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 17:19:31,748 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Pre-condition:
+ Register new user with info: 
+[2023-11-01 17:19:31,749 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - First name 'Leonore'
+[2023-11-01 17:19:31,750 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Last name 'Jones'
+[2023-11-01 17:19:31,750 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Email 'trevor.goldner@yahoo.com'
+[2023-11-01 17:19:31,750 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Password 'Z*w4Qmz%Fd'
+
+[2023-11-01 17:19:44,272 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 01: Update Gender to 'Male'
+[2023-11-01 17:19:44,595 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 02: Update First name to 'Rogelio'
+[2023-11-01 17:19:44,813 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 03: Update Last name to 'Kutch'
+[2023-11-01 17:19:44,988 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 04: Update Date of birth to '3'
+[2023-11-01 17:19:45,391 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 05: Update Month of birth to 'March'
+[2023-11-01 17:19:45,836 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 06: Update Year of birth to '2022'
+[2023-11-01 17:19:46,014 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 07: Update Email to 'setsuko.willms@yahoo.com'
+[2023-11-01 17:19:46,171 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 08: Update Company name to 'Kerluke Group'
+[2023-11-01 17:19:47,009 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 09: Click button 'Save'
+[2023-11-01 17:19:48,389 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 10: Verify data updated
+
+[2023-11-01 17:19:51,566 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 01: Open 'Addresses' page
+[2023-11-01 17:19:53,516 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 02: Click button 'Add new'
+[2023-11-01 17:19:54,636 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 03: Input to First name textbox with value is 'Rogelio'
+[2023-11-01 17:19:54,855 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 04: Input to Last name textbox with value is 'Kutch'
+[2023-11-01 17:19:55,414 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 05: Input to Email textbox with value is 'setsuko.willms@yahoo.com'
+[2023-11-01 17:19:55,570 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 06: Input to Company textbox with value is 'Kerluke Group'
+[2023-11-01 17:19:55,797 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 07: Select Country with value is 'United States'
+[2023-11-01 17:19:56,077 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 08: Select State/Province with value is 'Alaska'
+[2023-11-01 17:19:57,437 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 09: Input to City textbox with value is 'Erwinland'
+[2023-11-01 17:19:57,535 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 10: Input to Address1 textbox with value is 'Apt. 279 554 Vern Shoals, Sheldonburgh, NJ 47609-6678'
+[2023-11-01 17:19:57,662 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 11: Input to Address2 textbox with value is 'Apt. 792'
+[2023-11-01 17:19:57,920 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 12: Input to Zipcode textbox with value is '25861-8357'
+[2023-11-01 17:19:58,104 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 13: Input to Phone number textbox with value is '(732) 565-1607'
+[2023-11-01 17:19:59,466 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 14: Click to Save button
+[2023-11-01 17:20:01,802 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 15: Verify data inputed /n
+[2023-11-01 17:20:01,892 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,165 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,250 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,331 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,371 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,399 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,583 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,623 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,668 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,742 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,783 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:02,788 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 01: Open 'Change Password' page
+[2023-11-01 17:20:03,702 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 02: input to Old Password textbox with value 'Z*w4Qmz%Fd'
+[2023-11-01 17:20:03,818 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 03: input to New Password textbox with value 'cn6FT&c%'
+[2023-11-01 17:20:04,063 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 04: input to Confirm New Password textbox with value 'cn6FT&c%'
+[2023-11-01 17:20:04,164 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 05: Click to Change Password button
+[2023-11-01 17:20:05,199 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 06: Verify update Password successfully
+[2023-11-01 17:20:05,284 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:05,287 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 01: Open 'Computers' page
+[2023-11-01 17:20:09,081 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 02: Open 'Desktops' page
+[2023-11-01 17:20:11,015 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 03: Select Sort by 'Name: A to Z'
+[2023-11-01 17:20:11,306 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 04: Verify Sort by 'Name: A to Z'
+[2023-11-01 17:20:12,390 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:12,390 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 05: Select Sort by 'Name: Z to A'
+[2023-11-01 17:20:12,837 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 06: Verify Sort by 'Name: Z to A'
+[2023-11-01 17:20:13,494 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:13,494 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 07: Select Sort by 'Price: Low to High'
+[2023-11-01 17:20:13,663 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 08: Verify Sort by 'Price: Low to High'
+[2023-11-01 17:20:14,250 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:14,250 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 09: Select Sort by 'Price: High to Low'
+[2023-11-01 17:20:14,466 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 10: Verify Sort by 'Price: High to Low'
+[2023-11-01 17:20:15,244 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:20:15,245 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:20:15,245 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = edgedriver: msedge on mac (dede4ef479b67af8731d05376738a16c)
+[2023-11-01 17:23:28,748 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:23:28,749 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 17:24:07,033 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:24:07,034 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 17:25:01,435 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:25:01,435 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - 
+[2023-11-01 17:26:21,173 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Pre-condition:
+ Register new user with info: 
+[2023-11-01 17:26:21,173 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - First name 'Margit'
+[2023-11-01 17:26:21,173 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Last name 'Schmidt'
+[2023-11-01 17:26:21,173 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Email 'cristopher.hills@hotmail.com'
+[2023-11-01 17:26:21,174 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Password '$0pz0!ZV0Ewn'
+
+[2023-11-01 17:26:34,333 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 01: Update Gender to 'Male'
+[2023-11-01 17:26:34,666 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 02: Update First name to 'Elvin'
+[2023-11-01 17:26:34,793 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 03: Update Last name to 'Romaguera'
+[2023-11-01 17:26:34,979 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 04: Update Date of birth to '3'
+[2023-11-01 17:26:35,331 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 05: Update Month of birth to 'March'
+[2023-11-01 17:26:36,004 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 06: Update Year of birth to '2022'
+[2023-11-01 17:26:36,107 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 07: Update Email to 'alberta.heaney@hotmail.com'
+[2023-11-01 17:26:36,278 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 08: Update Company name to 'Mraz, Shields and Dooley'
+[2023-11-01 17:26:36,624 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 09: Click button 'Save'
+[2023-11-01 17:26:37,831 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_01 - Step 10: Verify data updated
+
+[2023-11-01 17:26:40,796 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 01: Open 'Addresses' page
+[2023-11-01 17:26:42,576 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 02: Click button 'Add new'
+[2023-11-01 17:26:43,452 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 03: Input to First name textbox with value is 'Elvin'
+[2023-11-01 17:26:43,693 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 04: Input to Last name textbox with value is 'Romaguera'
+[2023-11-01 17:26:44,208 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 05: Input to Email textbox with value is 'alberta.heaney@hotmail.com'
+[2023-11-01 17:26:44,330 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 06: Input to Company textbox with value is 'Mraz, Shields and Dooley'
+[2023-11-01 17:26:44,496 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 07: Select Country with value is 'United States'
+[2023-11-01 17:26:44,911 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 08: Select State/Province with value is 'Alaska'
+[2023-11-01 17:26:45,776 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 09: Input to City textbox with value is 'East Scott'
+[2023-11-01 17:26:45,881 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 10: Input to Address1 textbox with value is 'Apt. 373 9842 Goldner Harbor, East Drew, ND 02225-2399'
+[2023-11-01 17:26:46,051 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 11: Input to Address2 textbox with value is 'Suite 033'
+[2023-11-01 17:26:46,180 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 12: Input to Zipcode textbox with value is '05571'
+[2023-11-01 17:26:46,307 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 13: Input to Phone number textbox with value is '(582) 100-5160 x8285'
+[2023-11-01 17:26:46,473 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 14: Click to Save button
+[2023-11-01 17:26:48,156 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_02 - Step 15: Verify data inputed /n
+[2023-11-01 17:26:48,253 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,337 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,415 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,459 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,491 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,522 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,603 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,643 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,689 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,714 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,755 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:48,760 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 01: Open 'Change Password' page
+[2023-11-01 17:26:49,762 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 02: input to Old Password textbox with value '$0pz0!ZV0Ewn'
+[2023-11-01 17:26:49,907 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 03: input to New Password textbox with value '*Dstg524ECmP2'
+[2023-11-01 17:26:50,099 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 04: input to Confirm New Password textbox with value '*Dstg524ECmP2'
+[2023-11-01 17:26:50,199 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 05: Click to Change Password button
+[2023-11-01 17:26:51,183 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_03 - Step 06: Verify update Password successfully
+[2023-11-01 17:26:51,223 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:51,226 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 01: Open 'Computers' page
+[2023-11-01 17:26:53,510 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 02: Open 'Desktops' page
+[2023-11-01 17:26:55,227 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 03: Select Sort by 'Name: A to Z'
+[2023-11-01 17:26:55,718 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 04: Verify Sort by 'Name: A to Z'
+[2023-11-01 17:26:56,646 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:56,647 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 05: Select Sort by 'Name: Z to A'
+[2023-11-01 17:26:56,888 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 06: Verify Sort by 'Name: Z to A'
+[2023-11-01 17:26:57,564 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:57,564 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 07: Select Sort by 'Price: Low to High'
+[2023-11-01 17:26:57,895 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 08: Verify Sort by 'Price: Low to High'
+[2023-11-01 17:26:58,511 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:58,511 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 09: Select Sort by 'Price: High to Low'
+[2023-11-01 17:26:58,616 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - TC_04 - Step 10: Verify Sort by 'Price: High to Low'
+[2023-11-01 17:26:59,364 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - ---------------------- Passed -----------------------
+[2023-11-01 17:26:59,366 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - OS name = mac os x
+[2023-11-01 17:26:59,366 INFO com.nopcommerce.user.Level_21_Multiple_Environment_Owner] - Driver instance name = edgedriver: msedge on mac (18e1b4ef8409ca4395fc753ea05c05ab)

@@ -22,7 +22,7 @@ public class MySQLTestConnection {
 
 		String sql = "Select Emp.Emp_Id, Emp.First_Name, Emp.Last_Name, Emp.Dept_Id From Employee Emp;";
 
-		// Thực thi câu lệnh SQL trả về đối tượng ResultSet.
+		// Thực thi SQL trả về đối tượng ResultSet.
 		ResultSet rs = statement.executeQuery(sql);
 
 		// Duyệt trên kết quả trả về

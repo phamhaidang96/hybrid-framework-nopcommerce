@@ -17,9 +17,9 @@
 <!--	  <listener class-name = "org.uncommons.reportng.HTMLReporter"/>-->
 <!--	  <listener class-name = "org.uncommons.reportng.JUnitXMLReporter"/>-->
   </listeners>
-	  <parameter name = "environment" value = "evnStagingAdmin"/>
+	  <parameter name = "environment" value = "evnStagingUser"/>
   <test name="Run on Chrome">
-	  <parameter name = "browser" value = "chrome"/>
+	  <parameter name = "browser" value = "edge"/>
     <classes>
 <!--      <class name="com.nopcommerce.common.Common_02_Register_New_Account_Cookie"/>-->
       <class name="com.nopcommerce.user.Level_21_Multiple_Environment_Owner"/>

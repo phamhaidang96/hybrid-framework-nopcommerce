@@ -17,6 +17,12 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
 
+import factoryBrowser.ChromeDriverManager;
+import factoryBrowser.EdgeDriverManager;
+import factoryBrowser.FirefoxDriverManager;
+import factoryBrowser.HeadlessChromeDriverManager;
+import factoryBrowser.HeadlessFirefoxDriverManager;
+import factoryBrowser.SafariDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -72,38 +78,54 @@ public class BaseTest {
 		// throw new RuntimeException("Browser name is not valid.");
 		// }
 
+//		if (browserName.equals("firefox")) {
+//			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+//			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
+//					GlobalConstants.BROWSER_LOG_FOLDER + "FirefoxLog.log");
+//
+//			driver = WebDriverManager.firefoxdriver().create();
+//		} else if (browserName.equals("h_firefox")) {
+//			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
+//			FirefoxOptions options = new FirefoxOptions();
+//			options.addArguments("--headless");
+//			options.addArguments("window-size=1900x1080");
+//			driver = new FirefoxDriver(options);
+//		} else if (browserName.equals("edge")) {
+//			driver = WebDriverManager.edgedriver().create();
+//		} else if (browserName.equals("chrome")) {
+//			System.setProperty("webdriver.chrome.args", "--disable-logging");
+//			System.setProperty("webdriver.chrome.silentOutput", "true");
+//
+//			driver = WebDriverManager.chromedriver().create();
+//		} else if (browserName.equals("h_chrome")) {
+//			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");
+//			ChromeOptions options = new ChromeOptions();
+//			options.addArguments("--headless");
+//			options.addArguments("window-size=1900x1080");
+//			driver = new ChromeDriver(options);
+//		} else if (browserName.equals("coccoc")) {
+//			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver114");
+//			ChromeOptions options = new ChromeOptions();
+//			options.setBinary("/Applications/CocCoc.app/Contents/MacOS/CocCoc");
+//			driver = new ChromeDriver(options);
+//		} else if (browserName.equals("safari")) {
+//			driver = new SafariDriver();
+//		} else {
+//			throw new RuntimeException("Browser name is not valid.");
+//		}
+
 		if (browserName.equals("firefox")) {
-			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,
-					GlobalConstants.BROWSER_LOG_FOLDER + "FirefoxLog.log");
-
-			driver = WebDriverManager.firefoxdriver().create();
+			driver = new FirefoxDriverManager().getBrowserDriver();
 		} else if (browserName.equals("h_firefox")) {
-			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
-			FirefoxOptions options = new FirefoxOptions();
-			options.addArguments("--headless");
-			options.addArguments("window-size=1900x1080");
-			driver = new FirefoxDriver(options);
-		} else if (browserName.equals("edge")) {
-			driver = WebDriverManager.edgedriver().create();
+			driver = new HeadlessFirefoxDriverManager().getBrowserDriver();
 		} else if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.args", "--disable-logging");
-			System.setProperty("webdriver.chrome.silentOutput", "true");
-
-			driver = WebDriverManager.chromedriver().create();
+			driver = new ChromeDriverManager().getBrowserDriver();
 		} else if (browserName.equals("h_chrome")) {
-			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
-			options.addArguments("window-size=1900x1080");
-			driver = new ChromeDriver(options);
-		} else if (browserName.equals("coccoc")) {
-			System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver114");
-			ChromeOptions options = new ChromeOptions();
-			options.setBinary("/Applications/CocCoc.app/Contents/MacOS/CocCoc");
-			driver = new ChromeDriver(options);
+			driver = new HeadlessChromeDriverManager().getBrowserDriver();
+		} else if (browserName.equals("edge")) {
+			driver = new EdgeDriverManager().getBrowserDriver();
 		} else if (browserName.equals("safari")) {
-			driver = new SafariDriver();
+			driver = new SafariDriverManager().getBrowserDriver();
 		} else {
 			throw new RuntimeException("Browser name is not valid.");
 		}
